@@ -12,11 +12,11 @@ from datetime import datetime
 from pydantic import BaseModel, Field
 from semhash import SemHash
 from langchain_core.language_models import BaseChatModel
-from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.embeddings import Embeddings
 from ontomem.merger import MergeStrategy, CustomRuleMerger
 
 from hyperextract.utils.logging import get_logger
+from hyperextract.utils.structured_output import create_structured_extractor
 from hyperextract.types.graph import AutoGraph, AutoGraphSchema
 
 logger = get_logger(__name__)
@@ -429,11 +429,11 @@ class Atom(AutoGraph[NodeSchema, EdgeSchema]):
             raw_chunks = self.text_splitter.split_text(text)
 
         # 2. Define Fact Extraction Chain
-        fact_prompt_template = ChatPromptTemplate.from_template(
-            Atom_FACTOID_EXTRACTION_PROMPT
-        )
-        fact_chain = fact_prompt_template | self.llm_client.with_structured_output(
-            AtomicFactSchema
+        fact_chain = create_structured_extractor(
+            prompt=Atom_FACTOID_EXTRACTION_PROMPT,
+            schema=AtomicFactSchema,
+            llm_client=self.llm_client,
+            operation="Atom.atomic_fact_extraction",
         )
 
         # 3. Batch Extract Facts

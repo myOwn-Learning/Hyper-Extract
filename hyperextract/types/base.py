@@ -11,6 +11,7 @@ from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 from hyperextract.utils.logging import get_logger
+from hyperextract.utils.structured_output import create_structured_extractor
 
 logger = get_logger(__name__)
 
@@ -72,11 +73,12 @@ class BaseAutoType(ABC, Generic[T]):
         self.max_workers = max_workers
         self.verbose = verbose
 
-        # Initialize template
-        self.prompt_template = ChatPromptTemplate.from_template(self.prompt)
-        self.data_extractor = (
-            self.prompt_template
-            | self.llm_client.with_structured_output(self._data_schema)
+        # Initialize structured extractor
+        self.data_extractor = create_structured_extractor(
+            prompt=self.prompt,
+            schema=self._data_schema,
+            llm_client=self.llm_client,
+            operation=f"{self.__class__.__name__}.data_extraction",
         )
 
         # Initialize text splitter for chunking long documents

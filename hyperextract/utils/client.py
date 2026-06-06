@@ -23,6 +23,8 @@ logger = logging.getLogger(__name__)
 
 DEFAULT_CONFIG_DIR = Path.home() / ".he"
 DEFAULT_CONFIG_FILE = DEFAULT_CONFIG_DIR / "config.toml"
+DEFAULT_LLM_TIMEOUT_SECONDS = 60.0
+DEFAULT_LLM_MAX_RETRIES = 2
 
 # Official OpenAI API base URL — only this endpoint accepts pre-tokenized input
 OPENAI_API_URL = "https://api.openai.com/v1"
@@ -266,12 +268,29 @@ def create_llm(
 
     from langchain_openai import ChatOpenAI
 
-    return ChatOpenAI(
+    timeout = config.get("timeout", config.get("request_timeout"))
+    if timeout is None:
+        timeout = float(os.environ.get("HE_LLM_TIMEOUT", DEFAULT_LLM_TIMEOUT_SECONDS))
+
+    max_retries = config.get("max_retries")
+    if max_retries is None:
+        max_retries = int(os.environ.get("HE_LLM_MAX_RETRIES", DEFAULT_LLM_MAX_RETRIES))
+
+    llm = ChatOpenAI(
         model=config["model"],
         api_key=config["api_key"] or os.environ.get("OPENAI_API_KEY", ""),
         base_url=config.get("base_url") or None,
         temperature=config.get("temperature", 0),
+        timeout=timeout,
+        max_retries=max_retries,
     )
+    object.__setattr__(llm, "_provider", config.get("provider", ""))
+    object.__setattr__(
+        llm,
+        "_structured_output_strategy",
+        config.get("structured_output_strategy", ""),
+    )
+    return llm
 
 
 def create_embedder(

@@ -207,6 +207,13 @@ he talk ./output/ -q "你的问题"
    ka.max_workers = 5  # 默认：10
    ```
 
+4. **调整 LLM 请求超时**（provider 响应较慢时）：
+   ```bash
+   HE_LLM_TIMEOUT=120 he parse doc.md -t general/graph -o ./out/ -l zh
+   ```
+
+   默认 LLM 超时为 60 秒。设置 `HE_LLM_MAX_RETRIES=0` 可以在调试 provider 延迟时避免重试放大等待时间。
+
 ### 内存不足
 
 **问题**：进程被终止或出现内存错误
@@ -284,6 +291,30 @@ he talk ./output/ -q "你的问题"
    rm -rf ./ka/
    he parse doc.md -t general/graph -o ./ka/ -l zh
    ```
+
+---
+
+## 提供商结构化输出兼容性
+
+### 百炼返回 messages must contain the word json
+
+**问题**：百炼返回类似错误：
+
+```text
+'messages' must contain the word 'json'
+```
+
+**原因**：提供商使用 JSON 响应格式时要求提示词明确包含 JSON 字样。
+
+**解决方案**：Hyper-Extract 会在统一结构化抽取适配器中自动注入 JSON 输出指令；不需要修改 YAML 模板。如果仍然遇到该错误，请确认正在使用包含该修复的版本。
+
+### DeepSeek 拒绝 response_format
+
+**问题**：DeepSeek 拒绝基于响应格式的结构化输出。
+
+**解决方案**：Hyper-Extract 会优先尝试工具/函数调用。只有在提供商明确不支持该策略时，才会回退到 JSON 提示词 + Pydantic 校验。
+
+认证失败、网络错误、限流、余额不足不会触发回退，应按提供商或 API 配置问题处理。
 
 ---
 

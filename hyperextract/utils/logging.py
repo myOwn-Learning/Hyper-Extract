@@ -10,23 +10,11 @@ ENV_LOG_LEVEL = "HYPER_EXTRACT_LOG_LEVEL"
 ENV_LOG_FILE = "HYPER_EXTRACT_LOG_FILE"
 
 
-def configure_logging(
-    level: str = "WARNING",
+def _configure_structlog_processors(
+    *,
     json_output: bool = False,
-    output_file: Optional[str] = None,
 ) -> None:
-    """Configure structlog for hyper-extract.
-
-    Args:
-        level: Log level ("DEBUG", "INFO", "WARNING", "ERROR").
-        json_output: If True, output JSON format (for production).
-        output_file: Optional file path to write logs.
-    """
-    import os
-
-    level = os.getenv(ENV_LOG_LEVEL, level).upper()
-    level_value = getattr(logging, level, logging.WARNING)
-
+    """Configure structlog to emit through stdlib logging."""
     structlog.configure(
         processors=[
             structlog.stdlib.add_log_level,
@@ -44,6 +32,26 @@ def configure_logging(
         logger_factory=structlog.stdlib.LoggerFactory(),
         cache_logger_on_first_use=True,
     )
+
+
+def configure_logging(
+    level: str = "WARNING",
+    json_output: bool = False,
+    output_file: Optional[str] = None,
+) -> None:
+    """Configure structlog for hyper-extract.
+
+    Args:
+        level: Log level ("DEBUG", "INFO", "WARNING", "ERROR").
+        json_output: If True, output JSON format (for production).
+        output_file: Optional file path to write logs.
+    """
+    import os
+
+    level = os.getenv(ENV_LOG_LEVEL, level).upper()
+    level_value = getattr(logging, level, logging.WARNING)
+
+    _configure_structlog_processors(json_output=json_output)
 
     handlers = []
 
@@ -79,6 +87,8 @@ def get_logger(name: str = None) -> structlog.stdlib.BoundLogger:
     Returns:
         A structlog bound logger instance.
     """
+    if not structlog.is_configured():
+        _configure_structlog_processors()
     return structlog.get_logger(name)
 
 

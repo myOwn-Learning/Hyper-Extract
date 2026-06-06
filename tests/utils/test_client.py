@@ -15,6 +15,8 @@ from hyperextract.utils.client import (
     CompatibleEmbeddings,
     get_client,
     PROVIDER_PRESETS,
+    DEFAULT_LLM_MAX_RETRIES,
+    DEFAULT_LLM_TIMEOUT_SECONDS,
 )
 
 
@@ -112,6 +114,33 @@ class TestCreateLLM:
             temperature=0.5,
         )
         assert llm.model_name == "gpt-4"
+
+    def test_create_llm_sets_default_timeout(self):
+        """LLM requests have a bounded timeout by default."""
+        llm = create_llm("bailian", api_key="sk-test")
+        assert llm.request_timeout == DEFAULT_LLM_TIMEOUT_SECONDS
+        assert llm.max_retries == DEFAULT_LLM_MAX_RETRIES
+
+    def test_create_llm_accepts_timeout_overrides(self):
+        """Explicit timeout and max_retries override defaults."""
+        llm = create_llm(
+            "bailian",
+            api_key="sk-test",
+            timeout=12,
+            max_retries=0,
+        )
+        assert llm.request_timeout == 12
+        assert llm.max_retries == 0
+
+    def test_create_llm_reads_timeout_env(self, monkeypatch):
+        """Environment variables configure CLI-created LLM clients."""
+        monkeypatch.setenv("HE_LLM_TIMEOUT", "7")
+        monkeypatch.setenv("HE_LLM_MAX_RETRIES", "1")
+
+        llm = create_llm("bailian", api_key="sk-test")
+
+        assert llm.request_timeout == 7.0
+        assert llm.max_retries == 1
 
 
 class TestCreateEmbedder:
@@ -344,6 +373,28 @@ class TestGetClient:
         from langchain_openai import OpenAIEmbeddings
 
         assert isinstance(emb, OpenAIEmbeddings)
+
+
+# =============================================================================
+# LLM provider metadata
+# =============================================================================
+
+class TestLLMProviderMetadata:
+    """Tests for provider metadata attached to LLM clients."""
+
+    def test_create_llm_attaches_provider_metadata(self):
+        """create_llm preserves provider metadata for structured output routing."""
+        llm = create_llm(
+            {
+                "provider": "bailian",
+                "model": "qwen-plus",
+                "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+                "api_key": "sk-test",
+            }
+        )
+
+        assert llm._provider == "bailian"
+        assert llm._structured_output_strategy == ""
 
 
 # =============================================================================

@@ -9,8 +9,8 @@ from typing import List, Dict, Optional, Any, Tuple
 from pydantic import BaseModel, Field
 from langchain_core.embeddings import Embeddings
 from langchain_core.language_models import BaseChatModel
-from langchain_core.prompts import ChatPromptTemplate
 from hyperextract.types import AutoGraph
+from hyperextract.utils.structured_output import create_structured_extractor
 from ontomem.merger import CustomRuleMerger
 
 try:
@@ -477,10 +477,11 @@ class Graph_RAG(AutoGraph[NodeSchema, EdgeSchema]):
             print("Generating community reports...")
         self.community_reports = {}
 
-        chain = ChatPromptTemplate.from_template(
-            COMMUNITY_REPORT_PROMPT
-        ) | self.llm_client.with_structured_output(
-            CommunityReport, method="function_calling"
+        chain = create_structured_extractor(
+            prompt=COMMUNITY_REPORT_PROMPT,
+            schema=CommunityReport,
+            llm_client=self.llm_client,
+            operation="Graph_RAG.community_report",
         )
 
         for i, community_nodes in enumerate(communities):

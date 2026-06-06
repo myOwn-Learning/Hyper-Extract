@@ -42,6 +42,26 @@ app.add_typer(list_app, name="list")
 app.add_typer(config_app, name="config")
 
 
+def _is_timeout_error(exc: Exception) -> bool:
+    """Return True for provider/network timeout errors."""
+    timeout_names = {"APITimeoutError", "ReadTimeout", "TimeoutException", "TimeoutError"}
+    return exc.__class__.__name__ in timeout_names or "timed out" in str(exc).lower()
+
+
+def _feed_text_or_exit(ka, text: str) -> None:
+    try:
+        ka.feed_text(text)
+    except Exception as exc:
+        if not _is_timeout_error(exc):
+            raise
+        console.print("[red]Error:[/red] LLM request timed out during extraction.")
+        console.print(
+            "[dim]Try increasing HE_LLM_TIMEOUT, reducing max_workers in Python, "
+            "or checking provider latency/rate limits.[/dim]"
+        )
+        raise typer.Exit(1) from exc
+
+
 @app.callback()
 def main(
     ctx: typer.Context,
@@ -329,7 +349,7 @@ def parse(
 
             progress.update(task, description="Extracting knowledge...")
             logger.debug("stage=feed_text_invoked")
-            ka.feed_text(combined_text)
+            _feed_text_or_exit(ka, combined_text)
             logger.info("stage=knowledge_extracted chars=%d", len(combined_text))
         else:
             progress.update(task, description="Reading input...")
@@ -338,7 +358,7 @@ def parse(
 
             progress.update(task, description="Extracting knowledge...")
             logger.debug("stage=feed_text_invoked")
-            ka.feed_text(text)
+            _feed_text_or_exit(ka, text)
             logger.info("stage=knowledge_extracted chars=%d", len(text))
 
         progress.update(task, description="Saving data...")
@@ -735,7 +755,7 @@ def feed(
 
         progress.update(task, description="Appending knowledge...")
         logger.debug("stage=feed_text_invoked")
-        ka.feed_text(text)
+        _feed_text_or_exit(ka, text)
         logger.info("stage=knowledge_appended chars=%d", len(text))
 
         progress.update(task, description="Saving data...")

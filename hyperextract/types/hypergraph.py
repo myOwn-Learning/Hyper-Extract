@@ -27,6 +27,7 @@ from ontosight import view_hypergraph
 
 from .base import BaseAutoType
 from hyperextract.utils.logging import get_logger
+from hyperextract.utils.structured_output import create_structured_extractor
 
 logger = get_logger(__name__)
 
@@ -318,16 +319,18 @@ class AutoHypergraph(
         self.edge_prompt = prompt_for_edge_extraction or DEFAULT_EDGE_PROMPT
 
         # Two-stage mode: validate prompts and initialize extractors
-        self.prompt_template = ChatPromptTemplate.from_template(self.node_prompt)
-        self.node_extractor = (
-            self.prompt_template
-            | self.llm_client.with_structured_output(self.node_list_schema)
+        self.node_extractor = create_structured_extractor(
+            prompt=self.node_prompt,
+            schema=self.node_list_schema,
+            llm_client=self.llm_client,
+            operation="AutoHypergraph.node_extraction",
         )
 
-        self.edge_prompt_template = ChatPromptTemplate.from_template(self.edge_prompt)
-        self.edge_extractor = (
-            self.edge_prompt_template
-            | self.llm_client.with_structured_output(self.edge_list_schema)
+        self.edge_extractor = create_structured_extractor(
+            prompt=self.edge_prompt,
+            schema=self.edge_list_schema,
+            llm_client=self.llm_client,
+            operation="AutoHypergraph.edge_extraction",
         )
 
     # ==================== Prompts ====================

@@ -213,6 +213,13 @@ he talk ./output/ -q "your question"
    ka.max_workers = 5  # Default: 10
    ```
 
+4. **Tune LLM request timeout** (when provider responses are slow):
+   ```bash
+   HE_LLM_TIMEOUT=120 he parse doc.md -t general/graph -o ./out/ -l en
+   ```
+
+   The default LLM timeout is 60 seconds. Set `HE_LLM_MAX_RETRIES=0` while debugging provider latency to avoid retries extending the wait.
+
 ### Out of Memory
 
 **Problem**: Process killed or memory error
@@ -290,6 +297,30 @@ he talk ./output/ -q "your question"
    rm -rf ./ka/
    he parse doc.md -t general/graph -o ./ka/ -l en
    ```
+
+---
+
+## Provider Structured Output Compatibility
+
+### Bailian returns messages must contain the word json
+
+**Problem**: Bailian returns an error like:
+
+```text
+'messages' must contain the word 'json'
+```
+
+**Cause**: The provider requires prompts to explicitly mention JSON when JSON response format is used.
+
+**Solution**: Hyper-Extract injects this instruction in the unified structured extraction adapter. YAML templates do not need provider-specific wording. If this error still appears, verify that you are running a version that includes this fix.
+
+### DeepSeek rejects response_format
+
+**Problem**: DeepSeek rejects response-format structured output.
+
+**Solution**: Hyper-Extract first tries tool/function calling. It falls back to JSON prompt + Pydantic validation only when the provider clearly does not support the structured-output strategy.
+
+Authentication failures, network errors, rate limits, and insufficient balance do not trigger fallback and should be treated as provider/API configuration issues.
 
 ---
 
