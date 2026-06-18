@@ -1,0 +1,116 @@
+=== Hyper-RAG Real LLM Diagnostic ===
+Start time: 2026-06-17T23:53:49.343559
+Output file: /Users/parkermeng/Documents/github/Hyper-Extract/debug_real_extraction_output.txt
+
+LLM Model: qwen3.6-plus
+Embedding Model: text-embedding-v4
+Base URL: https://dashscope.aliyuncs.com/compatible-mode/v1
+
+Creating LLM and embedding clients...
+✓ Clients created
+
+Loading: /Users/parkermeng/Documents/github/Hyper-Extract/examples/zh/sushi.md
+✓ Text loaded (2586 chars)
+
+Initializing Hyper_RAG...
+✓ Hyper_RAG initialized
+
+First chunk size: 2048 chars
+First chunk preview: # 苏轼传
+
+苏轼，字子瞻，号东坡居士，是北宋时期最杰出的文学家、书画家、政治家。他与父亲苏洵、弟弟苏辙并称"三苏"，同列唐宋八大家。
+
+## 早年与家学
+
+苏轼于1037年出生于眉州眉山（今四川眉山）。他的父亲苏洵是北宋著名文学家，对两个儿子的教育极为严格。据记载，苏轼的母亲程氏曾用"断机教子"的方法激励他学习。一天小苏轼读书心不在焉，程氏便剪断正在织的布，说："你读书就像织布，半途而废便毫无用...
+
+=== NODE EXTRACTION ===
+✓ Node extraction succeeded
+  Type: NodeSchemaList
+  Items count: 76
+    [0] 苏轼 (person)
+    [1] 苏洵 (person)
+    [2] 苏辙 (person)
+    [3] 程氏 (person)
+    [4] 范滂 (person)
+    ... and 71 more
+
+Raw node output (first 10):
+{
+  "type": "NodeSchemaList",
+  "count": 76,
+  "items": [
+    {
+      "name": "苏轼",
+      "type": "person",
+      "description": "北宋时期最杰出的文学家、书画家、政治家，字子瞻，号东坡居士，与父苏洵、弟苏辙并称'三苏'。"
+    },
+    {
+      "name": "苏洵",
+      "type": "person",
+      "description": "苏轼父亲，北宋著名文学家，对两个儿子的教育极为严格。"
+    },
+    {
+      "name": "苏辙",
+      "type": "person",
+      "description": "苏轼弟弟，与苏轼同科中举，乌台诗案中曾请求以官职为兄赎罪。"
+    },
+    {
+      "name": "程氏",
+      "type": "person",
+      "description": "苏轼母亲，曾用'断机教子'的方法激励苏轼发奋读书。"
+    },
+    {
+      "name": "范滂",
+      "type": "person",
+      "description": "东汉忠臣，苏轼十岁读其传记后立志效仿的报国济民对象。"
+    },
+    {
+      "name": "欧阳修",
+      "type": "person",
+      "description": "1057年科举主考官，北宋文学家，极为赞赏苏轼才华并预言其将掩盖自己光芒。"
+    },
+    {
+      "name": "曾巩",
+      "type": "person",
+      "description": "欧阳修的学生，欧阳修曾误将苏轼的策论文章归为其所作。"
+    },
+    {
+      "name": "宋神宗",
+      "type": "person",
+      "description": "北宋皇帝，1067年即位，期间王安石推行新法。"
+    },
+    {
+      "name": "王安石",
+      "type": "person",
+      "description": "北宋政治家，推行新法，与苏轼政见不合。"
+    },
+    {
+      "name": "李定",
+      "type": "person",
+      "description": "御史台官员，参与搜集苏轼诗作并断章取义指控其讪谤朝政。"
+    }
+  ]
+}
+
+=== EDGE EXTRACTION ===
+✓ Edge extraction succeeded
+  Type: EdgeSchemaList
+  Items count: 0
+
+Raw edge output (first 10):
+{
+  "type": "EdgeSchemaList",
+  "count": 0,
+  "items": []
+}
+
+=== FULL TWO-STAGE EXTRACTION ===
+✓ Two-stage extraction succeeded
+  Raw nodes: 73
+  Raw edges: 0
+  Node keys: ['苏轼', '子瞻', '东坡居士', '北宋', '苏洵']
+  Edge participants (first 3): []
+
+End time: 2026-06-18T00:06:33.924944
+=== END ===

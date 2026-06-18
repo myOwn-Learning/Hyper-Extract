@@ -158,6 +158,7 @@ class TestCreateEmbedder:
         emb = create_embedder("bailian", api_key="sk-test")
         assert isinstance(emb, CompatibleEmbeddings)
         assert emb._model == "text-embedding-v4"
+        assert emb._max_batch_size == 10
 
     def test_create_embedder_vllm(self):
         """vLLM embedder uses CompatibleEmbeddings."""
@@ -313,8 +314,11 @@ class TestCompatibleEmbeddings:
 
         assert len(result) == 25
         assert mock_openai_client.embeddings.create.call_count == 3
-        for call in mock_openai_client.embeddings.create.call_args_list:
-            assert len(call.kwargs["input"]) <= 10
+        batch_sizes = [
+            len(call.kwargs["input"])
+            for call in mock_openai_client.embeddings.create.call_args_list
+        ]
+        assert batch_sizes == [10, 10, 5]
 
     def test_default_batch_size_is_conservative(self):
         """Default max_batch_size stays within the strictest known provider cap."""

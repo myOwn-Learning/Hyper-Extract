@@ -1,0 +1,769 @@
+{
+  "nodes": [
+    {
+      "name": "苏轼",
+      "type": "Person",
+      "description": "北宋文学家、书画家、政治家、美食家，传记主人公，字子瞻，号东坡居士"
+    },
+    {
+      "name": "苏洵",
+      "type": "Person",
+      "description": "苏轼的父亲，北宋著名文学家，'三苏'之一，唐宋八大家之一"
+    },
+    {
+      "name": "苏辙",
+      "type": "Person",
+      "description": "苏轼的弟弟，'三苏'之一，唐宋八大家之一；与其有深厚手足之情，撰写墓志铭并安葬苏轼"
+    },
+    {
+      "name": "程氏",
+      "type": "Person",
+      "description": "苏轼的母亲，以'断机教子'典故著称"
+    },
+    {
+      "name": "范滂",
+      "type": "Person",
+      "description": "东汉名臣，忠臣孝子典范，苏轼少年时仰慕对象"
+    },
+    {
+      "name": "欧阳修",
+      "type": "Person",
+      "description": "北宋文学家、政治家，1057年科举主考官，赏识并提携苏轼"
+    },
+    {
+      "name": "曾巩",
+      "type": "Person",
+      "description": "欧阳修的学生，与苏轼同科应试，曾被误认为苏轼文章作者"
+    },
+    {
+      "name": "李定",
+      "type": "Person",
+      "description": "北宋官员，御史台官员，乌台诗案主要构陷者之一"
+    },
+    {
+      "name": "舒亶",
+      "type": "Person",
+      "description": "北宋官员，御史台官员，乌台诗案主要构陷者之一"
+    },
+    {
+      "name": "王诜",
+      "type": "Person",
+      "description": "北宋宗室、画家、收藏家，苏轼好友，乌台诗案中积极营救苏轼"
+    },
+    {
+      "name": "佛印禅师",
+      "type": "Person",
+      "description": "北宋高僧，苏轼挚友，佛学知音，黄州及后期重要精神伴侣"
+    },
+    {
+      "name": "王弗",
+      "type": "Person",
+      "description": "苏轼第一任妻子，早逝，苏轼为其作《江城子·乙卯正月二十日夜记梦》"
+    },
+    {
+      "name": "朝云",
+      "type": "Person",
+      "description": "苏轼侍妾，终身追随，佛学知音，黄州、惠州、儋州时期始终相伴"
+    },
+    {
+      "name": "王安石",
+      "type": "Person",
+      "description": "北宋政治家、文学家，新法主要推行者，与苏轼政见不合"
+    },
+    {
+      "name": "宋神宗",
+      "type": "Person",
+      "description": "北宋皇帝，1067年即位，启用王安石变法"
+    },
+    {
+      "name": "凤翔府",
+      "type": "Location",
+      "description": "北宋地方行政建制，苏轼曾任判官"
+    },
+    {
+      "name": "汴京",
+      "type": "Location",
+      "description": "北宋都城，今河南开封"
+    },
+    {
+      "name": "杭州",
+      "type": "Location",
+      "description": "今浙江杭州，苏轼两度任职，曾任通判、知州，主持疏浚西湖、筑苏堤"
+    },
+    {
+      "name": "密州",
+      "type": "Location",
+      "description": "今山东诸城，苏轼曾任知州，作《江城子·密州出猎》"
+    },
+    {
+      "name": "徐州",
+      "type": "Location",
+      "description": "今江苏徐州，苏轼任知州时成功抗御黄河水患"
+    },
+    {
+      "name": "湖州",
+      "type": "Location",
+      "description": "今浙江湖州，苏轼调任知州期间遭弹劾，引发乌台诗案"
+    },
+    {
+      "name": "黄州",
+      "type": "Location",
+      "description": "宋代行政区划地名，今湖北黄冈，苏轼贬谪地，自号'东坡居士'出处，躬耕东坡、创作《赤壁赋》等，文学创作高峰地"
+    },
+    {
+      "name": "定慧院",
+      "type": "Location",
+      "description": "黄州境内寺院，苏轼初抵黄州时寄居处"
+    },
+    {
+      "name": "东坡",
+      "type": "Location",
+      "description": "黄州城东山坡，苏轼垦殖处，'东坡居士'号来源"
+    },
+    {
+      "name": "惠州",
+      "type": "Location",
+      "description": "宋代行政区划地名，今广东惠州，苏轼被贬之地，写下'日啖荔枝三百颗'"
+    },
+    {
+      "name": "儋州",
+      "type": "Location",
+      "description": "宋代极偏远流放地，今海南儋州，苏轼晚年最远贬所，致力于教化传播与中原文化推广"
+    },
+    {
+      "name": "常州",
+      "type": "Location",
+      "description": "今江苏常州，苏轼北归途中病逝地"
+    },
+    {
+      "name": "眉州眉山",
+      "type": "Location",
+      "description": "今四川眉山，苏轼出生地"
+    },
+    {
+      "name": "御史台",
+      "type": "Organization",
+      "description": "北宋中央监察机构，乌台诗案发生地（'乌台'即御史台别称）"
+    },
+    {
+      "name": "史馆",
+      "type": "Organization",
+      "description": "北宋中央史官机构，苏轼曾入直"
+    },
+    {
+      "name": "大理寺",
+      "type": "Organization",
+      "description": "北宋司法机构，苏轼初授官职大理评事所属部门"
+    },
+    {
+      "name": "团练副使",
+      "type": "Organization",
+      "description": "北宋地方军事辅助官职，苏轼黄州所任闲职"
+    },
+    {
+      "name": "安乐坊",
+      "type": "Organization",
+      "description": "苏轼在杭州创办的官方医疗机构，中国最早政府医院之一"
+    },
+    {
+      "name": "苏堤",
+      "type": "Location",
+      "description": "苏轼在杭州主持修筑的著名堤坝，后称'苏堤春晓'，西湖十景之首"
+    },
+    {
+      "name": "唐宋八大家",
+      "type": "Organization",
+      "description": "唐宋八大家之一，指唐代韩愈、柳宗元和宋代欧阳修、苏洵、苏轼、苏辙、王安石、曾巩；北宋著名文学流派与人物群体，含苏洵、苏轼、苏辙等八人"
+    },
+    {
+      "name": "三苏",
+      "type": "Organization",
+      "description": "苏轼家族合称，指苏洵、苏轼、苏辙父子三人"
+    },
+    {
+      "name": "乌台诗案",
+      "type": "Event",
+      "description": "北宋重大文字狱事件，因诗获罪，导致苏轼被捕入狱、贬谪黄州"
+    },
+    {
+      "name": "念奴娇·赤壁怀古",
+      "type": "Work",
+      "description": "苏轼代表词作，作于黄州，被誉为'千古第一词'，豪放词典范"
+    },
+    {
+      "name": "前赤壁赋",
+      "type": "Work",
+      "description": "苏轼代表赋作，作于黄州赤壁夜游，文辞清丽，哲理深邃"
+    },
+    {
+      "name": "定风波",
+      "type": "Work",
+      "description": "苏轼代表词作，作于黄州，展现旷达超脱人生态度"
+    },
+    {
+      "name": "江城子·密州出猎",
+      "type": "Work",
+      "description": "苏轼代表词作，作于密州，展现豪迈词风"
+    },
+    {
+      "name": "江城子·乙卯正月二十日夜记梦",
+      "type": "Work",
+      "description": "苏轼悼亡词代表作，作于密州，纪念亡妻王弗"
+    },
+    {
+      "name": "八风吹不动",
+      "type": "Concept",
+      "description": "苏轼诗作名句典故，体现其修行境界与佛印禅师机锋互动"
+    },
+    {
+      "name": "取葑泥、筑长堤",
+      "type": "Concept",
+      "description": "苏轼在杭州治理西湖时提出的工程技术方法"
+    },
+    {
+      "name": "断机教子",
+      "type": "Concept",
+      "description": "中国古代教育典故，程氏用以激励苏轼勤学"
+    },
+    {
+      "name": "黄庭坚",
+      "type": "Person",
+      "description": "北宋文学家，与苏轼并称'苏黄'，诗歌领域代表人物"
+    },
+    {
+      "name": "辛弃疾",
+      "type": "Person",
+      "description": "南宋词人，与苏轼并称'苏辛'，豪放派代表"
+    },
+    {
+      "name": "《黄州寒食诗帖》",
+      "type": "Work",
+      "description": "苏轼在黄州所作书法名帖，被誉为'天下第三行书'"
+    },
+    {
+      "name": "《赤壁怀古》",
+      "type": "Work",
+      "description": "苏轼在黄州期间创作的代表作，包括前后《赤壁赋》及《念奴娇·赤壁怀古》"
+    },
+    {
+      "name": "《赤壁赋》",
+      "type": "Work",
+      "description": "苏轼在黄州期间创作的代表作，包括前后《赤壁赋》及《念奴娇·赤壁怀古》"
+    },
+    {
+      "name": "东坡肉",
+      "type": "Work",
+      "description": "苏轼发明的著名菜肴，以猪肉为主料"
+    },
+    {
+      "name": "宋四家",
+      "type": "Organization",
+      "description": "宋代四位代表性书法家：苏轼、黄庭坚、米芾、蔡襄"
+    },
+    {
+      "name": "豪放派",
+      "type": "Concept",
+      "description": "中国文学史上重要文学流派，苏轼为开创者，强调恢弘气象与自由表达"
+    },
+    {
+      "name": "文人画",
+      "type": "Concept",
+      "description": "中国传统绘画流派，强调文人修养与写意精神，苏轼为开创者之一"
+    },
+    {
+      "name": "中原文化",
+      "type": "Concept",
+      "description": "中原文化核心区域的文化体系，苏轼在儋州积极传播"
+    },
+    {
+      "name": "穷则独善其身，达则兼济天下",
+      "type": "Concept",
+      "description": "儒家人生哲学命题，苏轼一生践行的准则"
+    }
+  ],
+  "edges": [
+    {
+      "source": "苏轼",
+      "target": "三苏",
+      "type": "member_of",
+      "time": "1037年",
+      "description": "苏轼与父亲苏洵、弟弟苏辙并称'三苏'"
+    },
+    {
+      "source": "苏轼",
+      "target": "唐宋八大家",
+      "type": "member_of",
+      "time": "1037年",
+      "description": "苏轼与父亲苏洵、弟弟苏辙同列唐宋八大家"
+    },
+    {
+      "source": "苏轼",
+      "target": "眉州眉山",
+      "type": "born_in",
+      "time": "1037年",
+      "description": "苏轼出生于眉州眉山"
+    },
+    {
+      "source": "苏轼",
+      "target": "苏洵",
+      "type": "child_of",
+      "time": "1037年",
+      "description": "苏洵是苏轼的父亲"
+    },
+    {
+      "source": "苏轼",
+      "target": "程氏",
+      "type": "child_of",
+      "time": "1037年",
+      "description": "程氏是苏轼的母亲"
+    },
+    {
+      "source": "苏轼",
+      "target": "范滂",
+      "type": "admires",
+      "time": "1047年",
+      "description": "苏轼十岁时读《后汉书·范滂传》并以范滂为志向榜样"
+    },
+    {
+      "source": "苏轼",
+      "target": "断机教子",
+      "type": "subject_of_educational_method",
+      "time": "1047年",
+      "description": "程氏用'断机教子'方法教育苏轼"
+    },
+    {
+      "source": "苏轼",
+      "target": "苏洵",
+      "type": "traveled_with",
+      "time": "1056年",
+      "description": "1056年苏轼与父亲苏洵、弟弟苏辙一起进京赶考"
+    },
+    {
+      "source": "苏轼",
+      "target": "苏辙",
+      "type": "traveled_with",
+      "time": "1056年",
+      "description": "1056年苏轼与弟弟苏辙一起进京赶考"
+    },
+    {
+      "source": "苏轼",
+      "target": "欧阳修",
+      "type": "examined_by",
+      "time": "1057年",
+      "description": "1057年欧阳修担任主考官，阅苏轼策论并大为赞赏"
+    },
+    {
+      "source": "苏轼",
+      "target": "苏辙",
+      "type": "co_graduated_with",
+      "time": "1057年",
+      "description": "1057年苏轼与苏辙同科中举"
+    },
+    {
+      "source": "苏轼",
+      "target": "程氏",
+      "type": "mourned_for",
+      "time": "1057年",
+      "description": "苏轼因母亲程氏病逝回乡守孝三年"
+    },
+    {
+      "source": "苏轼",
+      "target": "凤翔府",
+      "type": "served_in",
+      "time": "1061年",
+      "description": "守孝期满后苏轼任凤翔府判官"
+    },
+    {
+      "source": "苏轼",
+      "target": "史馆",
+      "type": "served_in",
+      "time": "1061年",
+      "description": "苏轼回京入直史馆"
+    },
+    {
+      "source": "苏轼",
+      "target": "王安石",
+      "type": "disagreed_with_politically",
+      "time": "1067年",
+      "description": "1067年宋神宗即位，王安石推行新法；苏轼与王安石政见不合"
+    },
+    {
+      "source": "苏轼",
+      "target": "王安石",
+      "type": "criticized_policy_of",
+      "time": "1067年",
+      "description": "1067年苏轼多次上书批评新法"
+    },
+    {
+      "source": "苏轼",
+      "target": "杭州",
+      "type": "served_in",
+      "time": "1071年",
+      "description": "1071年苏轼任杭州通判"
+    },
+    {
+      "source": "苏轼",
+      "target": "江城子·密州出猎",
+      "type": "authored",
+      "time": "1074年",
+      "description": "苏轼在密州任知州时写下《江城子·密州出猎》"
+    },
+    {
+      "source": "苏轼",
+      "target": "徐州",
+      "type": "served_in",
+      "time": "1077年",
+      "description": "1077年苏轼任徐州知州，指挥抗洪抢险成功保住徐州城"
+    },
+    {
+      "source": "苏轼",
+      "target": "湖州",
+      "type": "served_in",
+      "time": "1079年",
+      "description": "1079年苏轼调任湖州知州，同年发生乌台诗案"
+    },
+    {
+      "source": "苏轼",
+      "target": "李定",
+      "type": "accused_by",
+      "time": "1079年",
+      "description": "1079年乌台诗案中，李定、舒亶等人指控苏轼讪谤朝政"
+    },
+    {
+      "source": "苏轼",
+      "target": "舒亶",
+      "type": "accused_by",
+      "time": "1079年",
+      "description": "1079年乌台诗案中，李定、舒亶等人指控苏轼讪谤朝政"
+    },
+    {
+      "source": "苏轼",
+      "target": "苏辙",
+      "type": "supported_by",
+      "time": "1079年",
+      "description": "1079年乌台诗案中，苏辙请求以官职为苏轼赎罪"
+    },
+    {
+      "source": "苏轼",
+      "target": "王诜",
+      "type": "supported_by",
+      "time": "1079年",
+      "description": "1079年乌台诗案中，王诜多方奔走营救苏轼"
+    },
+    {
+      "source": "苏轼",
+      "target": "欧阳修",
+      "type": "supported_by",
+      "time": "1079年",
+      "description": "1079年乌台诗案中，欧阳修上书求情"
+    },
+    {
+      "source": "苏轼",
+      "target": "团练副使",
+      "type": "appointed_as",
+      "time": "1079年",
+      "description": "1079年乌台诗案后，苏轼被贬为黄州团练副使"
+    },
+    {
+      "source": "苏轼",
+      "target": "御史台",
+      "type": "imprisoned_in",
+      "time": "1079年",
+      "description": "1079年乌台诗案后，苏轼被关进御史台监狱"
+    },
+    {
+      "source": "苏轼",
+      "target": "定慧院",
+      "type": "resided_in",
+      "time": "1080年",
+      "description": "1080年苏轼抵达黄州，寄住定慧院"
+    },
+    {
+      "source": "苏轼",
+      "target": "东坡",
+      "type": "named_after_location",
+      "time": "1080年",
+      "description": "1080年苏轼在黄州城东山坡开垦种地，该地后称东坡"
+    },
+    {
+      "source": "苏轼",
+      "target": "东坡",
+      "type": "adopted_hao_from",
+      "time": "1080年",
+      "description": "苏轼自号东坡居士源于黄州东坡"
+    },
+    {
+      "source": "苏轼",
+      "target": "念奴娇·赤壁怀古",
+      "type": "authored",
+      "time": "1082年",
+      "description": "苏轼在黄州创作《念奴娇·赤壁怀古》"
+    },
+    {
+      "source": "苏轼",
+      "target": "前赤壁赋",
+      "type": "authored",
+      "time": "1082年",
+      "description": "苏轼在黄州创作《前赤壁赋》"
+    },
+    {
+      "source": "苏轼",
+      "target": "定风波",
+      "type": "authored",
+      "time": "1082年",
+      "description": "苏轼在黄州创作《定风波》"
+    },
+    {
+      "source": "苏轼",
+      "target": "佛印禅师",
+      "type": "befriended",
+      "time": "1080年",
+      "description": "苏轼在黄州与佛印禅师结为挚友"
+    },
+    {
+      "source": "苏轼",
+      "target": "八风吹不动",
+      "type": "associated_with_anecdote",
+      "time": "1080年",
+      "description": "苏轼与佛印禅师有'八风吹不动'典故"
+    },
+    {
+      "source": "苏轼",
+      "target": "取葑泥、筑长堤",
+      "type": "proposed",
+      "time": "1089年",
+      "description": "1089年苏轼任杭州知州，提出'取葑泥、筑长堤'办法"
+    },
+    {
+      "source": "苏轼",
+      "target": "苏堤",
+      "type": "built",
+      "time": "1089年",
+      "description": "苏轼在杭州筑苏堤"
+    },
+    {
+      "source": "苏轼",
+      "target": "安乐坊",
+      "type": "founded",
+      "time": "1089年",
+      "description": "苏轼在杭州创立安乐坊"
+    },
+    {
+      "source": "苏轼",
+      "target": "王弗",
+      "type": "spouse_of",
+      "time": "1093年",
+      "description": "1093年苏轼妻子王弗病逝（注：原文此处有误，王弗实卒于1065年；但依据文本严格提取，不修正事实性错误）"
+    },
+    {
+      "source": "苏轼",
+      "target": "江城子·乙卯正月二十日夜记梦",
+      "type": "authored",
+      "time": "1075年",
+      "description": "苏轼在密州写《江城子·乙卯正月二十日夜记梦》悼念王弗"
+    },
+    {
+      "source": "苏轼",
+      "target": "朝云",
+      "type": "accompanied_by",
+      "time": "1080年",
+      "description": "朝云陪伴苏轼无论顺境逆境，被贬黄州时追随"
+    },
+    {
+      "source": "苏轼",
+      "target": "朝云",
+      "type": "spiritual_companion_in_buddhism",
+      "time": "1080年",
+      "description": "朝云是苏轼在佛学上的知音"
+    },
+    {
+      "source": "苏轼",
+      "target": "惠州",
+      "type": "exiled_to",
+      "time": "1094年",
+      "description": "1094年苏轼被贬惠州"
+    },
+    {
+      "source": "苏轼",
+      "target": "儋州",
+      "type": "exiled_to",
+      "time": "1097年",
+      "description": "1097年苏轼被贬儋州"
+    },
+    {
+      "source": "苏轼",
+      "target": "常州",
+      "type": "died_in",
+      "time": "1101年",
+      "description": "1101年苏轼遇赦北归，病逝于常州"
+    },
+    {
+      "source": "苏轼",
+      "target": "朝云",
+      "type": "陪伴",
+      "time": "1080年",
+      "description": "朝云是苏轼的侍妾，始终陪伴其左右，包括被贬黄州期间追随苏轼。"
+    },
+    {
+      "source": "苏轼",
+      "target": "朝云",
+      "type": "佛学知音",
+      "time": "",
+      "description": "朝云是苏轼在佛学上的知音。"
+    },
+    {
+      "source": "苏轼",
+      "target": "黄州",
+      "type": "被贬至",
+      "time": "1080年",
+      "description": "苏轼于1080年被贬黄州，躬耕东坡。"
+    },
+    {
+      "source": "苏轼",
+      "target": "惠州",
+      "type": "被贬至",
+      "time": "1094年",
+      "description": "苏轼于1094年被贬惠州。"
+    },
+    {
+      "source": "苏轼",
+      "target": "儋州",
+      "type": "被贬至",
+      "time": "1097年",
+      "description": "苏轼于1097年被贬儋州。"
+    },
+    {
+      "source": "苏轼",
+      "target": "常州",
+      "type": "病逝于",
+      "time": "1101年",
+      "description": "苏轼于1101年病逝于常州。"
+    },
+    {
+      "source": "苏轼",
+      "target": "眉州眉山",
+      "type": "出生于",
+      "time": "1037年",
+      "description": "苏轼出生于1037年眉州眉山。"
+    },
+    {
+      "source": "苏轼",
+      "target": "杭州",
+      "type": "任职于",
+      "time": "1071年",
+      "description": "苏轼于1071年自请外任为杭州通判。"
+    },
+    {
+      "source": "苏轼",
+      "target": "杭州",
+      "type": "任职于",
+      "time": "1089年",
+      "description": "苏轼于1089年任杭州知州，修筑苏堤。"
+    },
+    {
+      "source": "苏轼",
+      "target": "乌台诗案",
+      "type": "涉及",
+      "time": "1079年",
+      "description": "苏轼于1079年因乌台诗案被捕入狱。"
+    },
+    {
+      "source": "苏轼",
+      "target": "《黄州寒食诗帖》",
+      "type": "创作",
+      "time": "",
+      "description": "苏轼创作《黄州寒食诗帖》，该作品被誉为'天下第三行书'。"
+    },
+    {
+      "source": "苏轼",
+      "target": "《赤壁怀古》",
+      "type": "创作",
+      "time": "1082年",
+      "description": "苏轼于1082年创作《赤壁怀古》。"
+    },
+    {
+      "source": "苏轼",
+      "target": "《赤壁赋》",
+      "type": "创作",
+      "time": "1082年",
+      "description": "苏轼于1082年创作《赤壁赋》。"
+    },
+    {
+      "source": "苏轼",
+      "target": "东坡肉",
+      "type": "发明",
+      "time": "",
+      "description": "苏轼发明东坡肉。"
+    },
+    {
+      "source": "苏轼",
+      "target": "黄庭坚",
+      "type": "并称苏黄",
+      "time": "",
+      "description": "苏轼与黄庭坚并称'苏黄'，代表诗歌成就。"
+    },
+    {
+      "source": "苏轼",
+      "target": "辛弃疾",
+      "type": "并称苏辛",
+      "time": "",
+      "description": "苏轼与辛弃疾并称'苏辛'，代表豪放派词风。"
+    },
+    {
+      "source": "苏轼",
+      "target": "欧阳修",
+      "type": "受赏识于",
+      "time": "1057年",
+      "description": "苏轼受欧阳修赏识，发生于1057年科举中举时。"
+    },
+    {
+      "source": "苏轼",
+      "target": "唐宋八大家",
+      "type": "属于",
+      "time": "",
+      "description": "苏轼是唐宋八大家之一。"
+    },
+    {
+      "source": "苏轼",
+      "target": "宋四家",
+      "type": "属于",
+      "time": "",
+      "description": "苏轼是宋四家之首。"
+    },
+    {
+      "source": "苏轼",
+      "target": "豪放派",
+      "type": "开创者",
+      "time": "",
+      "description": "苏轼是豪放派开创者。"
+    },
+    {
+      "source": "苏轼",
+      "target": "文人画",
+      "type": "开创者",
+      "time": "",
+      "description": "苏轼是文人画开创者之一。"
+    },
+    {
+      "source": "苏轼",
+      "target": "中原文化",
+      "type": "传播",
+      "time": "1097年",
+      "description": "苏轼在儋州传播中原文化。"
+    },
+    {
+      "source": "苏轼",
+      "target": "穷则独善其身，达则兼济天下",
+      "type": "诠释",
+      "time": "",
+      "description": "苏轼用一生诠释'穷则独善其身，达则兼济天下'的人生哲学。"
+    },
+    {
+      "source": "苏轼",
+      "target": "苏辙",
+      "type": "兄弟",
+      "time": "1101年",
+      "description": "苏轼与苏辙为兄弟关系，苏辙为其安葬并撰写墓志铭。"
+    }
+  ]
+}

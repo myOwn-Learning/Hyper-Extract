@@ -149,11 +149,20 @@ class MockChatModel(BaseChatModel):
         **kwargs: Any,
     ) -> Any:
         """Generate mock response."""
-        return type("ChatResult", (), {
-            "generations": [
-                type("Generation", (), {"message": AIMessage(content="mock response")})
-            ]
-        })()
+        # Return a structure compatible with langchain_core expectations.
+        # Each generation object should expose `generation_info` and `message`.
+        Generation = type(
+            "Generation",
+            (),
+            {"message": AIMessage(content="mock response"), "generation_info": {}},
+        )
+        # Include llm_output to satisfy langchain_core expectations.
+        ChatResult = type(
+            "ChatResult",
+            (),
+            {"generations": [Generation()], "llm_output": {}},
+        )
+        return ChatResult()
 
     def with_structured_output(
         self, schema: Type[BaseModel], **kwargs: Any

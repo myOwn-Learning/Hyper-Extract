@@ -38,7 +38,7 @@ if __name__ == "__main__":
     rag.feed_text(text)
 
     print("从苏轼传记中提取多实体关系...")
-    print(f"\n✓ 提取了 {len(rag.nodes)} 个实体，{len(rag.hyper_edges)} 个超边\n")
+    print(f"\n✓ 提取了 {len(rag.nodes)} 个实体，{len(rag.edges)} 个超边\n")
 
     print("-" * 60)
     print("问答")

@@ -1,0 +1,583 @@
+{
+  "nodes": [
+    {
+      "name": "Su Shi",
+      "type": "PERSON",
+      "description": "Su Shi was a Chinese poet, writer, calligrapher, painter, gastronome, and politician of the Northern Song dynasty; one of the most celebrated literary figures in Chinese history, also known as Dongpo Jushi."
+    },
+    {
+      "name": "Su Xun",
+      "type": "PERSON",
+      "description": "Father of Su Shi; prominent Northern Song literary figure and educator."
+    },
+    {
+      "name": "Su Zhe",
+      "type": "PERSON",
+      "description": "Su Zhe was the younger brother of Su Shi and a Northern Song scholar-official, writer, and statesman; he was part of the renowned 'Three Sus'—a literary trio comprising their father Su Xun and the two brothers—and authored Su Shi's epitaph."
+    },
+    {
+      "name": "Cheng Shi",
+      "type": "PERSON",
+      "description": "Mother of Su Shi; known for her moral instruction and use of the 'cutting-the-shuttle' parable to instill diligence."
+    },
+    {
+      "name": "Wang Fu",
+      "type": "PERSON",
+      "description": "Wife of Su Shi; died young in 1065; subject of his famous elegiac poem 'Jiang Cheng Zi'."
+    },
+    {
+      "name": "Chao Yun",
+      "type": "PERSON",
+      "description": "Chao Yun was Su Shi's concubine and lifelong companion who accompanied him through exile and hardship; she shared his deep Buddhist interests and served as his spiritual companion."
+    },
+    {
+      "name": "Wang Anshi",
+      "type": "PERSON",
+      "description": "Northern Song statesman, reformer, and chancellor; architect of the New Policies (Xin Fa) that Su Shi opposed."
+    },
+    {
+      "name": "Ouyang Xiu",
+      "type": "PERSON",
+      "description": "Northern Song scholar, historian, poet, literary master, and literary critic; served as chief examiner in the 1057 imperial examination where Su Shi excelled, and acted as Su Shi's mentor and early patron."
+    },
+    {
+      "name": "Li Ding",
+      "type": "PERSON",
+      "description": "Northern Song official and poet; one of the prosecutors in the Crow Terrace Poetry Case who accused Su Shi of slander."
+    },
+    {
+      "name": "Shu Dan",
+      "type": "PERSON",
+      "description": "Northern Song official and poet; co-prosecutor in the Crow Terrace Poetry Case."
+    },
+    {
+      "name": "Wang Shen",
+      "type": "PERSON",
+      "description": "Northern Song painter, calligrapher, and prince; close friend and patron of Su Shi; aided in his rescue during the Crow Terrace Poetry Case."
+    },
+    {
+      "name": "Fo Yin",
+      "type": "PERSON",
+      "description": "Buddhist monk and close friend of Su Shi; engaged in philosophical dialogues with him, notably the 'Eight Winds' anecdote."
+    },
+    {
+      "name": "Fan Pang",
+      "type": "PERSON",
+      "description": "Historical Chinese official and moral exemplar from the Eastern Han dynasty; cited by young Su Shi as a role model for integrity and filial piety."
+    },
+    {
+      "name": "Meizhou Meishan",
+      "type": "LOCATION",
+      "description": "Ancient Chinese city; modern-day Meishan City, Sichuan Province; birthplace of Su Shi."
+    },
+    {
+      "name": "Bianjing",
+      "type": "LOCATION",
+      "description": "Capital city of the Northern Song dynasty; present-day Kaifeng, Henan Province; site of imperial examinations and central government service."
+    },
+    {
+      "name": "Hangzhou",
+      "type": "LOCATION",
+      "description": "City in Zhejiang Province; where Su Shi served twice as prefect and constructed the Su Causeway on West Lake."
+    },
+    {
+      "name": "Mizhou",
+      "type": "LOCATION",
+      "description": "City in Shandong Province; where Su Shi served as prefect and composed 'Jiang Cheng Zi · Mi Zhou Chu Lie'."
+    },
+    {
+      "name": "Xuzhou",
+      "type": "LOCATION",
+      "description": "City in Jiangsu Province; where Su Shi served as prefect and successfully led flood control efforts after the Yellow River breach."
+    },
+    {
+      "name": "Huangzhou",
+      "type": "LOCATION",
+      "description": "City and ancient administrative region in present-day Hubei Province; site of Su Shi’s first major exile (1080–1084), where he established his 'Dongpo' farm and composed seminal literary works including 'Nian Nu Jiao · Chibi Huai Gu' (also known as 'Red Cliff Rhapsody')."
+    },
+    {
+      "name": "Huizhou",
+      "type": "LOCATION",
+      "description": "City and prefecture in southern Guangdong Province; Su Shi’s second place of exile (1094–1097), where he wrote 'Ri Dan Li Zhi San Bai Ke'; famed for its lychees and cultural isolation."
+    },
+    {
+      "name": "Dan Prefecture (Danzhou)",
+      "type": "LOCATION",
+      "description": "Region in present-day Hainan Province—specifically a prefecture on Hainan Island—serving as Su Shi's final and most remote exile from 1097 to 1100; regarded as the most severe banishment destination in Song-era China, where he nonetheless taught and promoted Confucian education."
+    },
+    {
+      "name": "Changzhou",
+      "type": "LOCATION",
+      "description": "City in Jiangsu Province; Su Shi's final residence and place of death in 1101 during his return journey after receiving imperial amnesty."
+    },
+    {
+      "name": "West Lake (Xi Hu)",
+      "type": "LOCATION",
+      "description": "Famous lake in Hangzhou; central to Su Shi’s public works (Su Causeway) and poetic inspiration."
+    },
+    {
+      "name": "Crow Terrace (Yu Tai)",
+      "type": "LOCATION",
+      "description": "Historic prison in Bianjing where Su Shi was detained during the Crow Terrace Poetry Case."
+    },
+    {
+      "name": "Su Causeway (Su Ti)",
+      "type": "LOCATION",
+      "description": "A famous embankment built by Su Shi in Hangzhou across West Lake during his governance (1089–1091) to control flooding and improve water transport; now one of the 'Ten Scenes of West Lake'."
+    },
+    {
+      "name": "Dongpo (Eastern Slope)",
+      "type": "LOCATION",
+      "description": "A hillside in Huangzhou where Su Shi farmed and adopted the sobriquet 'Dongpo Jushi'."
+    },
+    {
+      "name": "Anle Fang",
+      "type": "ORGANIZATION",
+      "description": "Government-run medical institution founded by Su Shi in Hangzhou; considered China's earliest state-sponsored hospital."
+    },
+    {
+      "name": "Three Sus",
+      "type": "ORGANIZATION",
+      "description": "Literary and political collective comprising Su Xun, Su Shi, and Su Zhe; all included among the 'Eight Great Prose Masters of the Tang and Song'."
+    },
+    {
+      "name": "Eight Great Prose Masters of the Tang and Song",
+      "type": "ORGANIZATION",
+      "description": "Elite group of eight prose writers from the Tang and Song dynasties, recognized for their mastery of classical prose; includes all three Sus."
+    },
+    {
+      "name": "New Policies (Xin Fa)",
+      "type": "EVENT",
+      "description": "Major political reform movement initiated under Emperor Shenzong of Song, led by Wang Anshi; opposed by Su Shi."
+    },
+    {
+      "name": "Crow Terrace Poetry Case (Wu Tai Shi An)",
+      "type": "EVENT",
+      "description": "Infamous political persecution in 1079 targeting Su Shi over alleged seditious poetry; resulted in his imprisonment and demotion to Huangzhou."
+    },
+    {
+      "name": "1057 Imperial Examination",
+      "type": "EVENT",
+      "description": "Imperial civil service examination held in 1057 CE, notable for Su Shi's outstanding performance and Ouyang Xiu's recognition."
+    },
+    {
+      "name": "Nian Nu Jiao · Chibi Huai Gu (Remembrance of a Fair Lady · Reminiscence of Red Cliff)",
+      "type": "WORK",
+      "description": "A celebrated literary work by Su Shi composed in Huangzhou; widely regarded as the greatest ci poem in Chinese history."
+    },
+    {
+      "name": "Qian Chi Bi Fu (First Ode on the Red Cliff)",
+      "type": "WORK",
+      "description": "A renowned rhapsody (fu) written by Su Shi during his Huangzhou exile; explores themes of impermanence and transcendence through a moonlit boat trip on the Yangtze."
+    },
+    {
+      "name": "Ding Feng Bo (Calming the Storm)",
+      "type": "WORK",
+      "description": "A famous ci poem expressing resilience and equanimity amid adversity; composed in Huangzhou."
+    },
+    {
+      "name": "Jiang Cheng Zi (Tune: Riverside Town) — 'Shi Nian Sheng Si Liang Mang Mang'",
+      "type": "WORK",
+      "description": "A poignant elegy written by Su Shi in Mizhou ten years after Wang Fu's death; considered the greatest elegiac poem in Chinese literature."
+    },
+    {
+      "name": "Yin Hu Shang Chu Qing Hou Yu (Drinking on West Lake: First Sunny, Then Rainy)",
+      "type": "WORK",
+      "description": "A celebrated poem composed in Hangzhou praising West Lake's beauty; contains the famous simile comparing the lake to Xi Shi."
+    },
+    {
+      "name": "Jiang Cheng Zi · Mi Zhou Chu Lie (Riverside Town · Hunting in Mizhou)",
+      "type": "WORK",
+      "description": "A bold and energetic ci poem composed in Mizhou; exemplifies Su Shi's heroic and unrestrained lyrical style."
+    },
+    {
+      "name": "Huang Tingjian",
+      "type": "PERSON",
+      "description": "Northern Song dynasty poet and calligrapher; Su Shi's contemporary and poetic counterpart ('Su-Huang')."
+    },
+    {
+      "name": "Xin Qiji",
+      "type": "PERSON",
+      "description": "Southern Song dynasty poet; later master of the bold and unconstrained ci style, paired with Su Shi as 'Su-Xin'."
+    },
+    {
+      "name": "Meishan",
+      "type": "LOCATION",
+      "description": "Historic city in Sichuan Province; birthplace and ancestral home of Su Shi and Su Zhe."
+    },
+    {
+      "name": "Wutai Poetry Case",
+      "type": "EVENT",
+      "description": "Literary and political incident in 1079 that led to Su Shi's arrest and near-execution over alleged seditious poetry; precipitated his exile to Huangzhou."
+    },
+    {
+      "name": "Rhapsody on the Red Cliff (Former)",
+      "type": "WORK",
+      "description": "Major literary work composed by Su Shi in Huangzhou (c. 1082); a rhapsody reflecting on history, impermanence, and transcendence."
+    },
+    {
+      "name": "Huangzhou Cold Food Observance Poem Scroll",
+      "type": "WORK",
+      "description": "Iconic calligraphic masterpiece written by Su Shi in Huangzhou (1082); renowned as the 'Third Best Running Script Scroll' in Chinese art history."
+    },
+    {
+      "name": "Dongpo Pork",
+      "type": "WORK",
+      "description": "Famous dish traditionally attributed to Su Shi's culinary innovation during his Huangzhou exile."
+    }
+  ],
+  "edges": [
+    {
+      "participants": [
+        "Su Shi",
+        "Su Xun",
+        "Su Zhe"
+      ],
+      "description": "The 'Three Sus' refers to the literary and familial grouping of Su Shi, his father Su Xun, and his brother Su Zhe — jointly celebrated as foundational figures in classical Chinese prose and core members of the Eight Great Prose Masters.",
+      "keywords": [
+        "Three Sus",
+        "Su Shi",
+        "Su Xun",
+        "Su Zhe"
+      ],
+      "strength": 10
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Su Xun",
+        "Su Zhe",
+        "Ouyang Xiu",
+        "Wang Anshi"
+      ],
+      "description": "The 'Eight Great Prose Masters of the Tang and Song' is a canonical literary grouping that includes Su Shi, Su Xun, Su Zhe, Ouyang Xiu, Wang Anshi, and others — representing a shared cultural-historical category of elite prose writers whose works defined classical standards.",
+      "keywords": [
+        "Eight Great Prose Masters of the Tang and Song",
+        "Su Shi",
+        "Su Xun",
+        "Su Zhe",
+        "Ouyang Xiu",
+        "Wang Anshi"
+      ],
+      "strength": 9
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Su Zhe",
+        "Ouyang Xiu"
+      ],
+      "description": "The 1057 Imperial Examination was a pivotal joint event where Su Shi and Su Zhe both passed the highest-level civil service exam under chief examiner Ouyang Xiu — marking their formal entry into officialdom and launching their literary-political careers together.",
+      "keywords": [
+        "1057 Imperial Examination",
+        "Su Shi",
+        "Su Zhe",
+        "Ouyang Xiu"
+      ],
+      "strength": 10
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Li Ding",
+        "Shu Dan",
+        "Wang Anshi",
+        "New Policies (Xin Fa)"
+      ],
+      "description": "The Crow Terrace Poetry Case (1079) was a political prosecution targeting Su Shi’s poetry; key accusers Li Ding and Shu Dan collaborated in collecting, interpreting, and presenting verses as evidence of treasonous satire against the New Policies — making it a coordinated judicial-political action involving multiple actors.",
+      "keywords": [
+        "Crow Terrace Poetry Case (Wu Tai Shi An)",
+        "Su Shi",
+        "Li Ding",
+        "Shu Dan",
+        "Wang Anshi",
+        "New Policies (Xin Fa)"
+      ],
+      "strength": 10
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Xuzhou"
+      ],
+      "description": "During the Yellow River flood crisis in Xuzhou (1077), Su Shi led emergency flood control efforts with local officials and laborers; though unnamed individuals are implied, the text explicitly frames this as a collective civic action — and 'Xuzhou' functions as a locative participant anchoring the event's spatial and administrative context.",
+      "keywords": [
+        "Xuzhou",
+        "Su Shi",
+        "Yellow River flood"
+      ],
+      "strength": 8
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Fo Yin"
+      ],
+      "description": "Su Shi’s poetic dialogue with Fo Yin during the 'Eight Winds' anecdote reflects a sustained philosophical exchange rooted in Chan Buddhist practice — where mutual challenge, humor, and spiritual insight bind them as co-participants in a thematic hyperedge of Zen teaching and self-cultivation.",
+      "keywords": [
+        "Fo Yin",
+        "Su Shi",
+        "Zen dialogue",
+        "Eight Winds"
+      ],
+      "strength": 9
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Hangzhou",
+        "West Lake (Xi Hu)",
+        "Su Causeway (Su Ti)"
+      ],
+      "description": "In Hangzhou (1089), Su Shi executed the West Lake dredging and dike-construction project — a large-scale public works initiative involving coordinated labor, engineering, and ecological management; 'West Lake (Xi Hu)' and 'Su Causeway (Su Ti)' are inseparable co-constitutive participants in this socio-ecological intervention.",
+      "keywords": [
+        "Hangzhou",
+        "West Lake (Xi Hu)",
+        "Su Causeway (Su Ti)",
+        "Su Shi"
+      ],
+      "strength": 10
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Hangzhou",
+        "Anle Fang"
+      ],
+      "description": "The founding of Anle Fang in Hangzhou represents Su Shi’s institutionalization of public healthcare — a collaborative civic act linking governance, medicine, and social welfare; 'Anle Fang' and 'Hangzhou' are co-located, co-functional participants in this pioneering public health initiative.",
+      "keywords": [
+        "Anle Fang",
+        "Hangzhou",
+        "Su Shi"
+      ],
+      "strength": 9
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Huangzhou",
+        "Dongpo (Eastern Slope)"
+      ],
+      "description": "Su Shi’s exile to Huangzhou (1080–1084) involved material hardship, intellectual flourishing, and identity transformation — crystallized in the naming of 'Dongpo (Eastern Slope)' after the land he cultivated; 'Huangzhou', 'Dongpo', and 'Su Shi' form an inseparable triadic relationship of place, self-naming, and existential redefinition.",
+      "keywords": [
+        "Huangzhou",
+        "Dongpo (Eastern Slope)",
+        "Su Shi"
+      ],
+      "strength": 10
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Wang Fu",
+        "Jiang Cheng Zi (Tune: Riverside Town) — 'Shi Nian Sheng Si Liang Mang Mang'"
+      ],
+      "description": "Su Shi’s lifelong devotion to his wife Wang Fu — memorialized in the elegiac poem 'Jiang Cheng Zi — Shi Nian Sheng Si Liang Mang Mang' — establishes a profound biographical and literary bond; 'Wang Fu' and 'Jiang Cheng Zi (Tune: Riverside Town) — 'Shi Nian Sheng Si Liang Mang Mang'' are co-constituted through grief, memory, and poetic form.",
+      "keywords": [
+        "Wang Fu",
+        "Jiang Cheng Zi (Tune: Riverside Town) — 'Shi Nian Sheng Si Liang Mang Mang'",
+        "Su Shi"
+      ],
+      "strength": 10
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Chao Yun"
+      ],
+      "description": "Chao Yun’s unwavering companionship across Su Shi’s exiles — from Huangzhou to Huizhou to Danzhou — constitutes a relational anchor of loyalty and emotional resilience; she followed him despite family opposition and served as his Buddhist intellectual companion, making them co-participants in a narrative of steadfast human connection and shared spiritual endurance.",
+      "keywords": [
+        "Chao Yun",
+        "Su Shi",
+        "Buddhism",
+        "exile"
+      ],
+      "strength": 9
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Nian Nu Jiao · Chibi Huai Gu (Remembrance of a Fair Lady · Reminiscence of Red Cliff)",
+        "Qian Chi Bi Fu (First Ode on the Red Cliff)",
+        "Huangzhou"
+      ],
+      "description": "The 'Nian Nu Jiao · Chibi Huai Gu' and 'Qian Chi Bi Fu' are two masterworks composed in close succession during Su Shi’s Huangzhou exile — thematically unified by Red Cliff imagery, historical reflection, and metaphysical inquiry; they jointly define his mature literary voice and constitute a paired creative output.",
+      "keywords": [
+        "Nian Nu Jiao · Chibi Huai Gu (Remembrance of a Fair Lady · Reminiscence of Red Cliff)",
+        "Qian Chi Bi Fu (First Ode on the Red Cliff)",
+        "Su Shi",
+        "Huangzhou"
+      ],
+      "strength": 10
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "West Lake (Xi Hu)",
+        "Yin Hu Shang Chu Qing Hou Yu (Drinking on West Lake: First Sunny, Then Rainy)"
+      ],
+      "description": "Su Shi’s poetic response to weather and landscape at West Lake — 'Yin Hu Shang Chu Qing Hou Yu' — embodies a synesthetic, philosophical engagement with place; 'West Lake (Xi Hu)' is not merely setting but an active aesthetic and conceptual partner in the poem’s meaning-making.",
+      "keywords": [
+        "Yin Hu Shang Chu Qing Hou Yu (Drinking on West Lake: First Sunny, Then Rainy)",
+        "West Lake (Xi Hu)",
+        "Su Shi"
+      ],
+      "strength": 9
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Mizhou",
+        "Jiang Cheng Zi · Mi Zhou Chu Lie (Riverside Town · Hunting in Mizhou)"
+      ],
+      "description": "The 'Jiang Cheng Zi · Mi Zhou Chu Lie' was composed during Su Shi’s tenure as Mizhou prefect — reflecting his leadership, martial ethos, and literary innovation in that locale; 'Mizhou' and the poem are co-indexed as site and artifact of civic-poetic synthesis.",
+      "keywords": [
+        "Jiang Cheng Zi · Mi Zhou Chu Lie (Riverside Town · Hunting in Mizhou)",
+        "Mizhou",
+        "Su Shi"
+      ],
+      "strength": 9
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Changzhou"
+      ],
+      "description": "Su Shi’s final journey north after imperial amnesty culminated in his death in Changzhou in 1101, marking the culmination of his life journey, final illness, and posthumous veneration; the city thus became a terminal node of biography, mourning, and legacy — binding 'Changzhou' and 'Su Shi' in an irreversible, historically attested endpoint relationship.",
+      "keywords": [
+        "Changzhou",
+        "Su Shi",
+        "death"
+      ],
+      "strength": 9
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Su Zhe"
+      ],
+      "description": "Su Shi and Su Zhe shared an exceptionally close fraternal bond, widely regarded as one of the most moving brotherly relationships in Chinese literary history; Su Zhe buried Su Shi and composed his epitaph after his death.",
+      "keywords": [
+        "Su Shi",
+        "Su Zhe"
+      ],
+      "strength": 10
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Ouyang Xiu"
+      ],
+      "description": "Su Shi and Ouyang Xiu were linked by mentorship and literary recognition: Ouyang Xiu famously praised Su Shi’s examination essays in 1057, launching his national reputation.",
+      "keywords": [
+        "Su Shi",
+        "Ouyang Xiu"
+      ],
+      "strength": 9
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Huang Tingjian"
+      ],
+      "description": "Su Shi and Huang Tingjian formed the core of the 'Su-Huang' poetic school; they are jointly celebrated as the two greatest poets of the Northern Song, representing the pinnacle of Song poetry.",
+      "keywords": [
+        "Su Shi",
+        "Huang Tingjian"
+      ],
+      "strength": 10
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Xin Qiji"
+      ],
+      "description": "Su Shi and Xin Qiji are canonically paired as the foundational figures of the bold and unconstrained (hàofàng) ci tradition; though from different generations, their stylistic legacy is inseparably conjoined as 'Su-Xin'.",
+      "keywords": [
+        "Su Shi",
+        "Xin Qiji"
+      ],
+      "strength": 9
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Huangzhou",
+        "Rhapsody on the Red Cliff (Former)",
+        "Huangzhou Cold Food Observance Poem Scroll"
+      ],
+      "description": "Su Shi’s exile to Huangzhou (1080–1084) was a defining period marked by profound literary output—including the 'Rhapsody on the Red Cliff (Former)' and the 'Huangzhou Cold Food Observance Poem Scroll'—and personal resilience.",
+      "keywords": [
+        "Su Shi",
+        "Huangzhou",
+        "Rhapsody on the Red Cliff (Former)",
+        "Huangzhou Cold Food Observance Poem Scroll"
+      ],
+      "strength": 10
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Su Causeway (Su Ti)"
+      ],
+      "description": "Su Shi’s administrative service in Hangzhou included designing and overseeing construction of the Su Causeway (Su Ti), a landmark civil engineering and cultural project that transformed West Lake.",
+      "keywords": [
+        "Su Shi",
+        "Su Causeway (Su Ti)"
+      ],
+      "strength": 9
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Huizhou"
+      ],
+      "description": "Su Shi’s 1094 exile to Huizhou inspired iconic verses ('I’ll eat three hundred lychees a day, and gladly be a southerner forever') and reflected his adaptive, joyful spirit amid political persecution.",
+      "keywords": [
+        "Su Shi",
+        "Huizhou"
+      ],
+      "strength": 9
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Dan Prefecture (Danzhou)"
+      ],
+      "description": "Su Shi’s final exile to Dan Prefecture (Danzhou) in 1097—then the remotest frontier of Song China—became a symbol of his moral fortitude and cultural mission, as he taught locals and preserved Confucian-Buddhist learning.",
+      "keywords": [
+        "Su Shi",
+        "Dan Prefecture (Danzhou)"
+      ],
+      "strength": 10
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Wutai Poetry Case",
+        "Huangzhou"
+      ],
+      "description": "The Wutai Poetry Case (1079) was a pivotal political prosecution targeting Su Shi’s poetry as seditious, resulting in his imprisonment and subsequent demotion to Huangzhou—the catalyst for his transformative 'eastern slope' phase.",
+      "keywords": [
+        "Su Shi",
+        "Wutai Poetry Case",
+        "Huangzhou"
+      ],
+      "strength": 10
+    },
+    {
+      "participants": [
+        "Su Shi",
+        "Dongpo Pork",
+        "Huangzhou"
+      ],
+      "description": "Su Shi’s culinary innovation 'Dongpo Pork' emerged from his Huangzhou exile and endures as a cultural artifact embodying his ingenuity, warmth, and integration of daily life with artistic sensibility.",
+      "keywords": [
+        "Su Shi",
+        "Dongpo Pork",
+        "Huangzhou"
+      ],
+      "strength": 8
+    }
+  ]
+}

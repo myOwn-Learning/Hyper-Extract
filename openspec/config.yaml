@@ -1,0 +1,36 @@
+schema: spec-driven
+
+context: |
+  文档语言要求：
+  - 所有由 OpenSpec 生成的 proposal、design、tasks、spec 内容默认使用简体中文。
+  - 代码标识符、命令、文件路径、API 名称、依赖包名、模型名保持英文。
+  - 如果 OpenSpec 解析器要求固定英文标题，例如 `## ADDED Requirements`、`### Requirement`、`#### Scenario`，则保留这些机器可解析标题，标题下正文使用中文。
+
+rules:
+  proposal:
+    - 使用简体中文撰写正文。
+  design:
+    - 使用简体中文撰写正文。
+  specs:
+    - 保留 OpenSpec 必需的英文结构标题；需求名称、场景名称和说明可使用中文。
+  tasks:
+    - 使用简体中文描述任务，但保留 `- [ ] 1.1` 这种 checkbox 格式。
+
+# 项目上下文（可选）
+# 创建 artifacts 时会提供给 AI。
+# 可在此补充技术栈、约定、风格指南、领域知识等。
+# 示例：
+#   context: |
+#     技术栈：TypeScript、React、Node.js
+#     使用 conventional commits
+#     领域：电商平台
+
+# 单个 artifact 规则（可选）
+# 可为特定 artifact 添加自定义规则。
+# 示例：
+#   rules:
+#     proposal:
+#       - proposal 控制在 500 字以内
+#       - 始终包含“非目标”部分
+#     tasks:
+#       - 将任务拆分为最多 2 小时可完成的小块

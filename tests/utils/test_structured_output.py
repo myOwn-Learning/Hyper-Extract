@@ -1,7 +1,7 @@
 from typing import Any
 
 import pytest
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, ConfigDict, create_model
 from langchain_core.runnables import RunnableSerializable
 
 from hyperextract.utils.structured_output import (
@@ -147,6 +147,26 @@ def test_json_fallback_rejects_invalid_schema():
         extractor._parse_json_response('{"unknown": "Ada"}')
 
     assert "schema_validation_failed" in str(exc.value)
+
+
+def test_json_fallback_accepts_top_level_array_for_list_wrapper_schema():
+    class NodeSchema(BaseModel):
+        name: str
+
+    list_schema = create_model("NodeSchemaList", items=(list[NodeSchema], []))
+
+    llm = RecordingLLM(provider="deepseek")
+    llm._structured_output_strategy = "json_prompt_parser"
+    extractor = create_structured_extractor(
+        prompt="Extract node list from {source_text}.",
+        schema=list_schema,
+        llm_client=llm,
+        operation="test.sample",
+    )
+
+    result = extractor._parse_json_response('[{"name": "Ada"}]')
+
+    assert result.items == [NodeSchema(name="Ada")]
 
 
 def test_api_failure_does_not_fallback_to_json_parser():

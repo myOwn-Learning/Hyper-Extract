@@ -84,6 +84,14 @@ def is_strategy_unsupported_error(exc: Exception) -> bool:
     return any(marker in text for marker in markers)
 
 
+def _is_list_wrapper_schema(schema: Type[BaseModel]) -> bool:
+    """Detect list-wrapper schemas with a single 'items' field."""
+    if not getattr(schema, "model_fields", None):
+        return False
+    field_names = list(schema.model_fields.keys())
+    return field_names == ["items"]
+
+
 def create_structured_extractor(
     *,
     prompt: str,
@@ -94,7 +102,7 @@ def create_structured_extractor(
     """Create a provider-compatible structured extraction runnable."""
     strategy = select_strategy(llm_client)
 
-    if strategy == "json_prompt_parser":
+    if strategy == "json_prompt_parser" or _is_list_wrapper_schema(schema):
         return JsonPromptParserRunnable(
             prompt=ensure_json_instruction(prompt),
             target_schema=schema,
@@ -149,6 +157,7 @@ class RuntimeFallbackRunnable(RunnableSerializable):
         try:
             return self.primary.invoke(input, config=config)
         except Exception as exc:
+            # Fall back to JSON parser only for unsupported structured-output errors.
             if self.provider == "deepseek" and is_strategy_unsupported_error(exc):
                 return self.fallback.invoke(input, config=config)
             raise
@@ -204,6 +213,10 @@ class JsonPromptParserRunnable(RunnableSerializable):
                 detail=str(exc),
             ) from exc
 
+        if isinstance(payload, list) and getattr(self.target_schema, "model_fields", None):
+            if list(self.target_schema.model_fields.keys()) == ["items"]:
+                payload = {"items": payload}
+
         try:
             return self.target_schema.model_validate(payload)
         except ValidationError as exc:
@@ -217,13 +230,23 @@ class JsonPromptParserRunnable(RunnableSerializable):
 
 
 def _extract_json_object(content: str) -> str:
-    """Extract the first JSON object from a model response."""
+    """Extract the first JSON object or array from a model response."""
     text = content.strip()
-    if text.startswith("{") and text.endswith("}"):
-        return text
+    if not text:
+        raise ValueError("No JSON object or array found in provider response")
 
-    start = text.find("{")
-    end = text.rfind("}")
-    if start == -1 or end == -1 or end <= start:
-        raise ValueError("No JSON object found in provider response")
+    if text[0] in ("{", "["):
+        closing_char = "}" if text[0] == "{" else "]"
+        if text.endswith(closing_char):
+            return text
+
+    start_positions = [idx for idx in (text.find("{"), text.find("[")) if idx != -1]
+    if not start_positions:
+        raise ValueError("No JSON object or array found in provider response")
+
+    start = min(start_positions)
+    closing_char = "}" if text[start] == "{" else "]"
+    end = text.rfind(closing_char)
+    if end == -1 or end <= start:
+        raise ValueError("No JSON object or array found in provider response")
     return text[start : end + 1]

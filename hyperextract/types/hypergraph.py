@@ -326,12 +326,27 @@ class AutoHypergraph(
             operation="AutoHypergraph.node_extraction",
         )
 
-        self.edge_extractor = create_structured_extractor(
-            prompt=self.edge_prompt,
-            schema=self.edge_list_schema,
-            llm_client=self.llm_client,
-            operation="AutoHypergraph.edge_extraction",
-        )
+        # Force JSON fallback for edge extraction to ensure parsable EdgeSchemaList
+        # without relying on provider-specific structured output support.
+        _had_override = hasattr(self.llm_client, "_structured_output_strategy")
+        _old_override = getattr(self.llm_client, "_structured_output_strategy", None)
+        try:
+            setattr(self.llm_client, "_structured_output_strategy", "json_prompt_parser")
+            self.edge_extractor = create_structured_extractor(
+                prompt=self.edge_prompt,
+                schema=self.edge_list_schema,
+                llm_client=self.llm_client,
+                operation="AutoHypergraph.edge_extraction",
+            )
+        finally:
+            # Restore previous state to avoid side-effects elsewhere
+            if _had_override:
+                setattr(self.llm_client, "_structured_output_strategy", _old_override)
+            else:
+                try:
+                    delattr(self.llm_client, "_structured_output_strategy")
+                except Exception:
+                    pass
 
     # ==================== Prompts ====================
 
@@ -634,12 +649,15 @@ class AutoHypergraph(
                 logger.warning("stage=merge_batch_empty_tuple nodes_and_edges_empty")
                 return self.graph_schema(nodes=[], edges=[])
 
-            if nodes_lists:
-                assert isinstance(nodes_lists[0][0], self.node_schema), (
+            first_node = next((items[0] for items in nodes_lists if items), None)
+            first_edge = next((items[0] for items in edges_lists if items), None)
+
+            if first_node is not None:
+                assert isinstance(first_node, self.node_schema), (
                     "Invalid node list format for batch merging"
                 )
-            if edges_lists:
-                assert isinstance(edges_lists[0][0], self.edge_schema), (
+            if first_edge is not None:
+                assert isinstance(first_edge, self.edge_schema), (
                     "Invalid edge list format for batch merging"
                 )
 

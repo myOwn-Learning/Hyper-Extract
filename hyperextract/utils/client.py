@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 
 DEFAULT_CONFIG_DIR = Path.home() / ".he"
 DEFAULT_CONFIG_FILE = DEFAULT_CONFIG_DIR / "config.toml"
-DEFAULT_LLM_TIMEOUT_SECONDS = 60.0
+DEFAULT_LLM_TIMEOUT_SECONDS = 180.0
 DEFAULT_LLM_MAX_RETRIES = 2
 
 # Official OpenAI API base URL — only this endpoint accepts pre-tokenized input
@@ -319,6 +319,8 @@ def create_embedder(
     uses_custom = bool(base_url and base_url.rstrip("/") != OPENAI_API_URL)
 
     if uses_custom:
+        if config.get("provider") == "bailian" and "chunk_size" not in kwargs:
+            kwargs["chunk_size"] = 10
         return CompatibleEmbeddings(
             model=config["model"],
             api_key=config["api_key"] or os.environ.get("OPENAI_API_KEY", ""),

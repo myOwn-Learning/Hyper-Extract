@@ -57,8 +57,22 @@ class EdgeSchema(BaseModel):
 
 Hyper_RAG_NODE_EXTRACTION_PROMPT = """
 -Goal-
-Identify relevant entities from the text.
-Entities will serve as participants in complex events later.
+Identify all concrete entities from the text.
+Entities will serve as participants in complex events later, so do not omit
+important entities that can participate in relationships or events.
+
+-Entity Types-
+Extract people/persons, organizations, geographic locations/geo places, events,
+roles, works, institutions, groups, time periods, and important concepts when
+they are explicitly mentioned in the source text.
+
+-Rules-
+1. Use the original language of the source text for entity names.
+2. Each entity must have a concise but useful description grounded in the text.
+3. Only return an empty list when the source text truly contains no identifiable
+   entities.
+
+Return the extracted entities as valid json in the required schema format.
 
 ### Source Text:
 {source_text}
@@ -79,6 +93,8 @@ It treats all involved entities as **participants** in a shared context
 2. Do NOT create edges for entities that represent strictly different concepts with no interaction.
 3. Ensure every edge has at least 2 participants.
 
+Return the extracted hyperedges as valid json in the required schema format.
+
 # Provided Entities
 {known_nodes}
 
@@ -98,6 +114,8 @@ Your task is to merge them into a SINGLE object exactly matching the schema.
 Merge strategy:
 1. **name/type**: Keep the most frequent or precise value.
 2. **description**: Synthesize a single, comprehensive description containing all unique details from the input descriptions. Write it in the third person. Resolve any contradictions coherently.
+
+Return the merged result as valid json following the exact schema structure.
 """
 
 Hyper_RAG_EDGE_MERGE_RULE = """You are an intelligent data merging assistant.
@@ -110,6 +128,8 @@ Merge strategy:
 2. **description**: Synthesize a single, comprehensive description covering the relationship dynamics from all inputs. Write it in the third person.
 3. **keywords**: Combine keyword lists from all inputs, removing duplicates.
 4. **strength**: Calculate the average of the input strengths (round to nearest integer).
+
+Return the merged result as valid json following the exact schema structure.
 """
 
 # ============================================================================

@@ -38,7 +38,7 @@ if __name__ == "__main__":
     rag.feed_text(text)
 
     print("Extracting hypergraph from Tesla's biography...")
-    print(f"\n✓ Extracted {len(rag.nodes)} entities, {len(rag.hyper_edges)} hyperedges\n")
+    print(f"\n✓ Extracted {len(rag.nodes)} entities, {len(rag.edges)} hyperedges\n")
 
     print("-" * 60)
     print("Q&A")
