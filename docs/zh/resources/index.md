@@ -22,7 +22,7 @@
 
 报告问题、请求功能或贡献代码。
 
-→ [GitHub 仓库](https://github.com/yifanfeng97/hyper-extract)
+→ [GitHub 仓库](https://github.com/myOwn-Learning/Hyper-Extract)
 
 ---
 
@@ -54,4 +54,4 @@
 
 ## 许可证
 
-Hyper-Extract 基于 [Apache-2.0 许可证](https://github.com/yifanfeng97/hyper-extract/blob/main/LICENSE) 开源。
+Hyper-Extract 基于 [Apache-2.0 许可证](https://github.com/myOwn-Learning/Hyper-Extract/blob/main/LICENSE) 开源。

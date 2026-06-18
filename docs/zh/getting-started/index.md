@@ -50,4 +50,4 @@
 
 - **有问题？** 查看 [常见问题](../resources/faq.md)
 - **遇到问题？** 参见 [故障排除](../resources/troubleshooting.md)
-- **发现错误？** [在 GitHub 上报告](https://github.com/yifanfeng97/hyper-extract/issues)
+- **发现错误？** [在 GitHub 上报告](https://github.com/myOwn-Learning/Hyper-Extract/issues)

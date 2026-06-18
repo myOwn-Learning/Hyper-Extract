@@ -69,7 +69,7 @@ Hyper-Extract 需要 **Python 3.11+**。
 
 ```bash
 # 克隆仓库
-git clone https://github.com/yifanfeng97/hyper-extract.git
+git clone https://github.com/myOwn-Learning/Hyper-Extract.git
 cd hyper-extract
 
 # 以可编辑模式安装开发依赖

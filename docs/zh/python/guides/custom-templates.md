@@ -369,7 +369,7 @@ ka = Template.create("method/my_method")
 
 与社区分享：
 
-1. Fork [Hyper-Extract 仓库](https://github.com/yifanfeng97/hyper-extract)
+1. Fork [Hyper-Extract 仓库](https://github.com/myOwn-Learning/Hyper-Extract)
 2. 添加模板到 `hyperextract/templates/`
 3. 提交 pull request
 

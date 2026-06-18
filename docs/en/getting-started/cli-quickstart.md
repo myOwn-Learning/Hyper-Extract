@@ -49,7 +49,7 @@ This creates a configuration file at `~/.he/config.toml`. You only need to do th
 
 ```bash
 # Download a sample biography
-curl -o tesla.md https://raw.githubusercontent.com/yifanfeng97/hyper-extract/main/examples/en/tesla.md
+curl -o tesla.md https://raw.githubusercontent.com/myOwn-Learning/Hyper-Extract/main/examples/en/tesla.md
 ```
 
 Or create a simple test file:

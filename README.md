@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://yifanfeng97.github.io/Hyper-Extract/latest/">
+<a href="https://myOwn-Learning.github.io/Hyper-Extract/latest/">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/assets/logo/logo-horizontal-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="docs/assets/logo/logo-horizontal.svg">
@@ -21,7 +21,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.11%2B-blue)](https://python.org)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
 [![Status](https://img.shields.io/badge/status-active-success)]()
-[![Docs](https://img.shields.io/badge/docs-online-blue)](https://yifanfeng97.github.io/Hyper-Extract/latest/)
+[![Docs](https://img.shields.io/badge/docs-online-blue)](https://myOwn-Learning.github.io/Hyper-Extract/latest/)
 
 <br/>
 
@@ -103,7 +103,7 @@ Hyper-Extract relies on the LLM's structured output capability (`json_schema` or
 
 **Embedding models** (semantic search) work with any OpenAI-compatible endpoint: `text-embedding-3-small`, `text-embedding-v4` (Bailian), `bge-m3` (local vLLM).
 
-> 📖 Full guide: [Provider System & Local Model Support](https://yifanfeng97.github.io/Hyper-Extract/latest/concepts/provider-system/)
+> 📖 Full guide: [Provider System & Local Model Support](https://myOwn-Learning.github.io/Hyper-Extract/latest/concepts/provider-system/)
 
 ## ⚡ 30-Second Quick Start
 
@@ -220,17 +220,17 @@ identifiers:
 
 | Resource | Link |
 | :------- | :--- |
-| Full Documentation | [yifanfeng97.github.io/Hyper-Extract](https://yifanfeng97.github.io/Hyper-Extract/latest/) |
-| CLI Guide | [Command-line interface](https://yifanfeng97.github.io/Hyper-Extract/latest/cli/) |
-| Provider System | [Model compatibility & local deployment](https://yifanfeng97.github.io/Hyper-Extract/latest/concepts/provider-system/) |
+| Full Documentation | [myOwn-Learning.github.io/Hyper-Extract](https://myOwn-Learning.github.io/Hyper-Extract/latest/) |
+| CLI Guide | [Command-line interface](https://myOwn-Learning.github.io/Hyper-Extract/latest/cli/) |
+| Provider System | [Model compatibility & local deployment](https://myOwn-Learning.github.io/Hyper-Extract/latest/concepts/provider-system/) |
 | Template Gallery | [80+ presets](./hyperextract/templates/presets/) |
 | Examples | [Working code](./examples/) |
 
 ## 🤝 Contributing & License
 
-Contributions are welcome! Please submit [Issues](https://github.com/yifanfeng97/hyper-extract/issues) and [PRs](https://github.com/yifanfeng97/hyper-extract/pulls).  
+Contributions are welcome! Please submit [Issues](https://github.com/myOwn-Learning/Hyper-Extract/issues) and [PRs](https://github.com/myOwn-Learning/Hyper-Extract/pulls).  
 Licensed under **Apache-2.0**.
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yifanfeng97/hyper-Extract&type=Date)](https://star-history.com/#yifanfeng97/hyper-Extract&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=myOwn-Learning/Hyper-Extract&type=Date)](https://star-history.com/#myOwn-Learning/Hyper-Extract&Date)

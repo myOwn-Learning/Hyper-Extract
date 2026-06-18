@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://yifanfeng97.github.io/Hyper-Extract/latest/zh/">
+<a href="https://myOwn-Learning.github.io/Hyper-Extract/latest/zh/">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/assets/logo/logo-horizontal-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="docs/assets/logo/logo-horizontal.svg">
@@ -21,7 +21,7 @@
 [![Python版本](https://img.shields.io/badge/python-3.11%2B-blue)](https://python.org)
 [![开源协议](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
 [![状态](https://img.shields.io/badge/status-active-success)]()
-[![文档](https://img.shields.io/badge/docs-online-blue)](https://yifanfeng97.github.io/Hyper-Extract/latest/zh/)
+[![文档](https://img.shields.io/badge/docs-online-blue)](https://myOwn-Learning.github.io/Hyper-Extract/latest/zh/)
 
 <br/>
 
@@ -103,7 +103,7 @@ Hyper-Extract 依赖大语言模型的结构化输出能力（`json_schema` 或 
 
 **嵌入模型**（语义搜索）支持任意 OpenAI 兼容端点：`text-embedding-3-small`、`text-embedding-v4`（百炼）、`bge-m3`（本地 vLLM）。
 
-> 📖 完整指南：[Provider 系统与本地模型支持](https://yifanfeng97.github.io/Hyper-Extract/latest/zh/concepts/provider-system/)
+> 📖 完整指南：[Provider 系统与本地模型支持](https://myOwn-Learning.github.io/Hyper-Extract/latest/zh/concepts/provider-system/)
 
 ## ⚡ 30 秒快速上手
 
@@ -220,17 +220,17 @@ identifiers:
 
 | 资源 | 链接 |
 | :------- | :--- |
-| 完整文档 | [yifanfeng97.github.io/Hyper-Extract](https://yifanfeng97.github.io/Hyper-Extract/latest/zh/) |
-| CLI 指南 | [命令行界面](https://yifanfeng97.github.io/Hyper-Extract/latest/zh/cli/) |
-| Provider 系统 | [模型兼容性与本地部署](https://yifanfeng97.github.io/Hyper-Extract/latest/zh/concepts/provider-system/) |
+| 完整文档 | [myOwn-Learning.github.io/Hyper-Extract](https://myOwn-Learning.github.io/Hyper-Extract/latest/zh/) |
+| CLI 指南 | [命令行界面](https://myOwn-Learning.github.io/Hyper-Extract/latest/zh/cli/) |
+| Provider 系统 | [模型兼容性与本地部署](https://myOwn-Learning.github.io/Hyper-Extract/latest/zh/concepts/provider-system/) |
 | 模板画廊 | [80+ 预设模板](./hyperextract/templates/presets/) |
 | 示例代码 | [可运行示例](./examples/) |
 
 ## 🤝 参与贡献与协议
 
-热烈欢迎社区提交 [Issues](https://github.com/yifanfeng97/hyper-extract/issues) 和 [PRs](https://github.com/yifanfeng97/hyper-extract/pulls)。  
+热烈欢迎社区提交 [Issues](https://github.com/myOwn-Learning/Hyper-Extract/issues) 和 [PRs](https://github.com/myOwn-Learning/Hyper-Extract/pulls)。  
 项目基于 **Apache-2.0** 协议开源。
 
 ## ⭐ Star 历史趋势
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yifanfeng97/hyper-Extract&type=Date)](https://star-history.com/#yifanfeng97/hyper-Extract&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=myOwn-Learning/Hyper-Extract&type=Date)](https://star-history.com/#myOwn-Learning/Hyper-Extract&Date)

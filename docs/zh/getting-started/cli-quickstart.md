@@ -49,7 +49,7 @@
 
 ```bash
 # 下载示例传记
-curl -o sushi.md https://raw.githubusercontent.com/yifanfeng97/hyper-extract/main/examples/zh/sushi.md
+curl -o sushi.md https://raw.githubusercontent.com/myOwn-Learning/Hyper-Extract/main/examples/zh/sushi.md
 ```
 
 或创建一个简单的测试文件：

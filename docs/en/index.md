@@ -203,10 +203,10 @@ You can use Hyper-Extract at any level: pick a template for quick results, choos
 
 Contributions are welcome! Whether it's bug reports, feature requests, or documentation improvements, please feel free to submit an issue or pull request.
 
-[:fontawesome-brands-github: GitHub Repository](https://github.com/yifanfeng97/hyper-extract){ .md-button .md-button--primary }
+[:fontawesome-brands-github: GitHub Repository](https://github.com/myOwn-Learning/Hyper-Extract){ .md-button .md-button--primary }
 
 ---
 
 ## 📄 License
 
-Hyper-Extract is licensed under the [Apache-2.0 License](https://github.com/yifanfeng97/hyper-extract/blob/main/LICENSE).
+Hyper-Extract is licensed under the [Apache-2.0 License](https://github.com/myOwn-Learning/Hyper-Extract/blob/main/LICENSE).

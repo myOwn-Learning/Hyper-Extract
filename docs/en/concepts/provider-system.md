@@ -14,7 +14,7 @@ Hyper-Extract supports three ways to connect to LLMs: **OpenAI**, **Alibaba Bail
 | **Alibaba Bailian** | qwen-plus / qwen-turbo / qwen3.6-plus / deepseek-r1 | ✅ | ✅ | Works out of the box |
 | **Alibaba Bailian** | qwen-max / deepseek-v3 | ❌ | ❌ | Only `json_object`; `json_schema` not supported |
 
-> **Bailian users**: Both qwen-max and deepseek-v3 do not support `json_schema`. If you hit `messages must contain the word 'json'` or get non-JSON output, switch to qwen-plus, qwen-turbo, or deepseek-r1. See [Issue #24](https://github.com/yifanfeng97/Hyper-Extract/issues/24).
+> **Bailian users**: Both qwen-max and deepseek-v3 do not support `json_schema`. If you hit `messages must contain the word 'json'` or get non-JSON output, switch to qwen-plus, qwen-turbo, or deepseek-r1. See [Issue #24](https://github.com/myOwn-Learning/Hyper-Extract/issues/24).
 
 ### Local Deployment
 
@@ -116,4 +116,4 @@ When deploying locally, thinking models (e.g. Qwen3.5 thinking mode) output `<th
 
 - [vLLM Structured Outputs](https://docs.vllm.ai/en/latest/features/structured_outputs/)
 - [XGrammar Paper](https://arxiv.org/abs/2411.15100)
-- [Issue #21: Domestic Model Support](https://github.com/yifanfeng97/Hyper-Extract/issues/21)
+- [Issue #21: Domestic Model Support](https://github.com/myOwn-Learning/Hyper-Extract/issues/21)

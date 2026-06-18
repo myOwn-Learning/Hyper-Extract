@@ -200,7 +200,7 @@ All submissions require review. We'll check:
 
 ## Questions?
 
-- Open a [GitHub Discussion](https://github.com/yifanfeng97/hyper-extract/discussions)
+- Open a [GitHub Discussion](https://github.com/myOwn-Learning/Hyper-Extract/discussions)
 - Comment on existing issues
 - Email: evanfeng97@gmail.com
 

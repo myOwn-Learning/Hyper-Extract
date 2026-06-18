@@ -261,7 +261,7 @@ class MyApp:
 
 ## Getting More Help
 
-- [GitHub Issues](https://github.com/yifanfeng97/hyper-extract/issues)
+- [GitHub Issues](https://github.com/myOwn-Learning/Hyper-Extract/issues)
 - [Troubleshooting Guide](troubleshooting.md)
 - [CLI Documentation](../cli/index.md)
 - [Python SDK](../python/index.md)

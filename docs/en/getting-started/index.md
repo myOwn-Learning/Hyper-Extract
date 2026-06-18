@@ -50,4 +50,4 @@ After completing the quickstart:
 
 - **Questions?** Check the [FAQ](../resources/faq.md)
 - **Issues?** See [Troubleshooting](../resources/troubleshooting.md)
-- **Found a bug?** [Report it on GitHub](https://github.com/yifanfeng97/hyper-extract/issues)
+- **Found a bug?** [Report it on GitHub](https://github.com/myOwn-Learning/Hyper-Extract/issues)

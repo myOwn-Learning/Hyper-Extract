@@ -218,7 +218,7 @@ he talk ./output/ -q "your question"
    HE_LLM_TIMEOUT=120 he parse doc.md -t general/graph -o ./out/ -l en
    ```
 
-   The default LLM timeout is 60 seconds. Set `HE_LLM_MAX_RETRIES=0` while debugging provider latency to avoid retries extending the wait.
+   The default LLM timeout is 180 seconds. Set `HE_LLM_MAX_RETRIES=0` while debugging provider latency to avoid retries extending the wait.
 
 ### Out of Memory
 
@@ -328,7 +328,7 @@ Authentication failures, network errors, rate limits, and insufficient balance d
 
 1. **Check logs** — Look for detailed error messages
 2. **Update to latest** — `pip install --upgrade hyperextract`
-3. **Check GitHub Issues** — [github.com/yifanfeng97/hyper-extract/issues](https://github.com/yifanfeng97/hyper-extract/issues)
+3. **Check GitHub Issues** — [github.com/myOwn-Learning/Hyper-Extract/issues](https://github.com/myOwn-Learning/Hyper-Extract/issues)
 4. **Create new issue** — Include error messages and reproduction steps
 
 ---

@@ -62,4 +62,4 @@
 在教程中遇到困难？
 - 查看[常见问题](../resources/faq.md)
 - 查看[故障排除](../resources/troubleshooting.md)
-- 在 [GitHub](https://github.com/yifanfeng97/hyper-extract/issues) 上提交 issue
+- 在 [GitHub](https://github.com/myOwn-Learning/Hyper-Extract/issues) 上提交 issue

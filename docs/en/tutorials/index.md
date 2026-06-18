@@ -62,4 +62,4 @@ All tutorials assume you have:
 Stuck on a tutorial?
 - Check the [FAQ](../resources/faq.md)
 - Review [Troubleshooting](../resources/troubleshooting.md)
-- Open an issue on [GitHub](https://github.com/yifanfeng97/hyper-extract/issues)
+- Open an issue on [GitHub](https://github.com/myOwn-Learning/Hyper-Extract/issues)

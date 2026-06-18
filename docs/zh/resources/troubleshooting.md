@@ -212,7 +212,7 @@ he talk ./output/ -q "你的问题"
    HE_LLM_TIMEOUT=120 he parse doc.md -t general/graph -o ./out/ -l zh
    ```
 
-   默认 LLM 超时为 60 秒。设置 `HE_LLM_MAX_RETRIES=0` 可以在调试 provider 延迟时避免重试放大等待时间。
+   默认 LLM 超时为 180 秒。设置 `HE_LLM_MAX_RETRIES=0` 可以在调试 provider 延迟时避免重试放大等待时间。
 
 ### 内存不足
 
@@ -322,7 +322,7 @@ he talk ./output/ -q "你的问题"
 
 1. **检查日志** — 查看详细的错误信息
 2. **更新到最新版本** — `pip install --upgrade hyperextract`
-3. **查看 GitHub Issues** — [github.com/yifanfeng97/hyper-extract/issues](https://github.com/yifanfeng97/hyper-extract/issues)
+3. **查看 GitHub Issues** — [github.com/myOwn-Learning/Hyper-Extract/issues](https://github.com/myOwn-Learning/Hyper-Extract/issues)
 4. **创建新 issue** — 包含错误消息和复现步骤
 
 ---

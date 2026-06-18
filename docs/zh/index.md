@@ -203,10 +203,10 @@ graph TD
 
 欢迎贡献！无论是错误报告、功能请求还是文档改进，请随时提交 Issue 或 Pull Request。
 
-[:fontawesome-brands-github: GitHub 仓库](https://github.com/yifanfeng97/hyper-extract){ .md-button .md-button--primary }
+[:fontawesome-brands-github: GitHub 仓库](https://github.com/myOwn-Learning/Hyper-Extract){ .md-button .md-button--primary }
 
 ---
 
 ## 📄 许可证
 
-Hyper-Extract 采用 [Apache-2.0 许可证](https://github.com/yifanfeng97/hyper-extract/blob/main/LICENSE)。
+Hyper-Extract 采用 [Apache-2.0 许可证](https://github.com/myOwn-Learning/Hyper-Extract/blob/main/LICENSE)。

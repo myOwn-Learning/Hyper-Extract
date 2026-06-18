@@ -22,7 +22,7 @@ Solutions to common problems.
 
 Report issues, request features, or contribute.
 
-→ [GitHub Repository](https://github.com/yifanfeng97/hyper-extract)
+→ [GitHub Repository](https://github.com/myOwn-Learning/Hyper-Extract)
 
 ---
 
@@ -54,4 +54,4 @@ Want to contribute to Hyper-Extract?
 
 ## License
 
-Hyper-Extract is licensed under the [Apache-2.0 License](https://github.com/yifanfeng97/hyper-extract/blob/main/LICENSE).
+Hyper-Extract is licensed under the [Apache-2.0 License](https://github.com/myOwn-Learning/Hyper-Extract/blob/main/LICENSE).

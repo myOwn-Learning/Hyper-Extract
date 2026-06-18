@@ -369,7 +369,7 @@ Place templates in the system directory:
 
 To share with the community:
 
-1. Fork the [Hyper-Extract repository](https://github.com/yifanfeng97/hyper-extract)
+1. Fork the [Hyper-Extract repository](https://github.com/myOwn-Learning/Hyper-Extract)
 2. Add your template to `hyperextract/templates/`
 3. Submit a pull request
 

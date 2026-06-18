@@ -3,10 +3,10 @@
 site_name: Hyper-Extract
 site_description: LLM-powered knowledge extraction framework
 site_author: Yifan Feng
-site_url: https://yifanfeng97.github.io/Hyper-Extract/
+site_url: https://myOwn-Learning.github.io/Hyper-Extract/
 
-repo_name: yifanfeng97/hyper-extract
-repo_url: https://github.com/yifanfeng97/hyper-extract
+repo_name: myOwn-Learning/Hyper-Extract
+repo_url: https://github.com/myOwn-Learning/Hyper-Extract
 edit_uri: edit/main/docs/
 
 hooks:
@@ -242,7 +242,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/yifanfeng97/hyper-extract
+      link: https://github.com/myOwn-Learning/Hyper-Extract
   version:
     provider: mike
 

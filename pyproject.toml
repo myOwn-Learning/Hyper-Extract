@@ -63,9 +63,9 @@ all = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yifanfeng97/hyper-extract"
-Repository = "https://github.com/yifanfeng97/hyper-extract"
-Issues = "https://github.com/yifanfeng97/hyper-extract/issues"
+Homepage = "https://github.com/myOwn-Learning/Hyper-Extract"
+Repository = "https://github.com/myOwn-Learning/Hyper-Extract"
+Issues = "https://github.com/myOwn-Learning/Hyper-Extract/issues"
 
 [project.scripts]
 he = "hyperextract.cli:app"

@@ -261,7 +261,7 @@ class MyApp:
 
 ## 获取更多帮助
 
-- [GitHub Issues](https://github.com/yifanfeng97/hyper-extract/issues)
+- [GitHub Issues](https://github.com/myOwn-Learning/Hyper-Extract/issues)
 - [故障排除指南](troubleshooting.md)
 - [CLI 文档](../cli/index.md)
 - [Python SDK](../python/index.md)

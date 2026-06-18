@@ -69,7 +69,7 @@ If you want to contribute or modify the source code:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yifanfeng97/hyper-extract.git
+git clone https://github.com/myOwn-Learning/Hyper-Extract.git
 cd hyper-extract
 
 # Install in editable mode with dev dependencies

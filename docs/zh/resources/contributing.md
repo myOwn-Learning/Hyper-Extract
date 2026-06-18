@@ -200,7 +200,7 @@ mkdocs build
 
 ## 有问题？
 
-- 开启 [GitHub Discussion](https://github.com/yifanfeng97/hyper-extract/discussions)
+- 开启 [GitHub Discussion](https://github.com/myOwn-Learning/Hyper-Extract/discussions)
 - 在现有 Issue 中评论
 - 邮件：evanfeng97@gmail.com
 
